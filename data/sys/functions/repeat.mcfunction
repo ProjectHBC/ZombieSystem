@@ -1,15 +1,15 @@
 #> sys:repeat
 #
-# 常時実行
+# 常時実行ファンクション
 #
 
 # 死亡したプレイヤーに実行
     # スペクテイターモードに変更
-        gamemode spectator @a[scores={iruru.deathcount=1}]
+        gamemode spectator @a[scores={iruru.deathcount=1..}]
     # 死亡メッセージを表示
-        tellraw @a[scores={iruru.deathcount=1}] [{"text": "✞復活することができません！✞","color": "red"}]
+        tellraw @a[scores={iruru.deathcount=1..}] [{"text": "✞復活することができません！✞","color": "red"}]
     # deathcountを0に設定
-        scoreboard players set @a[scores={iruru.deathcount=1}] deathcount 0
+        scoreboard players set @a[scores={iruru.deathcount=1..}] iruru.deathcount 0
 
 # zombie
     # speed_check(under) , ..0
