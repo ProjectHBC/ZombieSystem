@@ -3,4 +3,9 @@
 # 常時実行のファンクション
 #
 
-function sys:repeat
+# 常時実行(スペクテイターモード変更とspeed_check)
+    function sys:repeat
+
+# ゾンビのステータス変更
+    function sys:zombie_repeat
+    
