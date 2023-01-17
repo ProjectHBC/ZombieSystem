@@ -4,6 +4,8 @@
 #
 # @within function sys:*
 
-# スコアホルダー
+#> タグ
+    #declare tag Iruru.Healther_zombie
+
+#> スコアホルダー
     #declare score_holder $day
-    
