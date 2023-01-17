@@ -21,4 +21,4 @@
     # $day = 21~
     execute if score $day iruru.daycount matches 21.. run effect give @e[type=#zombie] minecraft:speed 3600 0 true
     execute if score $day iruru.daycount matches 21.. run effect give @e[type=#zombie] minecraft:strength 3600 0 true
-    execute if score $day iruru.daycount matches 21.. run effect give @e[type=#zombie] minecraft:absorption 2000 2 true
+    #execute if score $day iruru.daycount matches 21.. run effect give @e[type=#zombie] minecraft:absorption 3600 2 true
