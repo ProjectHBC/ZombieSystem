@@ -1,8 +1,8 @@
-#> sys:load
+#> sys:core/load
 #
 # データパックを読み込んだ時にロードされるファンクション
 #
 
 # インストールメッセージを表示
-    function sys:start_menu
-    function sys:buildup
+    function sys:install/start_menu
+    function sys:install/buildup

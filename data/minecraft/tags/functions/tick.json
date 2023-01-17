@@ -1,5 +1,5 @@
 {
     "values": [
-        "sys:tick"
+        "sys:core/tick"
     ] 
 }

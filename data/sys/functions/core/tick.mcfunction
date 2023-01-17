@@ -1,4 +1,4 @@
-#> sys:tick
+#> sys:core/tick
 #
 # 常時実行のファンクション
 #

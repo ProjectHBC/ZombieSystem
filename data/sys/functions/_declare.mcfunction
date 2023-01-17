@@ -4,4 +4,6 @@
 #
 # @within function sys:*
 
-## 現状無し
+# スコアホルダー
+    #declare score_holder $day
+    
