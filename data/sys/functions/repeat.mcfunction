@@ -12,14 +12,9 @@
         scoreboard players set @a[scores={iruru.deathcount=1..}] iruru.deathcount 0
 
 # zombie
-    # $day = 1~10
-    execute if score $day iruru.daycount matches 1..10 run effect give @e[type=#zombie] minecraft:slowness 3600 0 true
-
-    # $day = 11~20
-    execute if score $day iruru.daycount matches 11..20 run effect clear @e[type=#zombie] slowness
-
-    # $day = 21~
-    execute if score $day iruru.daycount matches 21.. run effect give @e[type=#zombie] minecraft:speed 3600 0 true
-    execute if score $day iruru.daycount matches 21.. run effect give @e[type=#zombie] minecraft:strength 3600 0 true
-    execute if score $day iruru.daycount matches 21.. run effect give @e[type=#zombie,tag=!Iruru.Healther_zombie] minecraft:absorption 3600 2 true
-    execute if score $day iruru.daycount matches 21.. run tag @e[type=#zombie] add Iruru.Healther_zombie
+    # speed_check(under) , ..0
+        execute if score $speed iruru.m_speed matches ..0 run scoreboard players set $speed iruru.m_speed 10
+        execute if score $speed iruru.m_speed matches ..0 run tellraw @a {"text": "$speedの範囲は1~20です","color": "red"}
+    # speed_check(over) , 21..
+        execute if score $speed iruru.m_speed matches 21.. run scoreboard players set $speed iruru.m_speed 10
+        execute if score $speed iruru.m_speed matches 21.. run tellraw @a {"text": "$speedの範囲は1~20です","color": "red"}
