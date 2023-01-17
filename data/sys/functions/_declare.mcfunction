@@ -4,4 +4,7 @@
 #
 # @within function sys:*
 
-## 現状無し
+#> スコアホルダー
+    #declare score_holder $day
+    #declare score_holder $speed
+    #declare score_holder $install
