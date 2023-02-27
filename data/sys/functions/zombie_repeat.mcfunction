@@ -25,13 +25,13 @@
         execute as @e[type=#zombie,tag=!Iruru.lv4] if score $day iruru.daycount matches 16..30 run tag @s add Iruru.lv4
 
     # $day = 31~40 (SPD-1.75x)(lv5)
-        execute as @e[type=#zombie,tag=!Iruru.lv5] if score $day iruru.daycount matches 16..30 run attribute @s generic.movement_speed base set 0.40250000729
-        execute as @e[type=#zombie,tag=!Iruru.lv5] if score $day iruru.daycount matches 16..30 run tag @s add Iruru.lv5
+        execute as @e[type=#zombie,tag=!Iruru.lv5] if score $day iruru.daycount matches 31..40 run attribute @s generic.movement_speed base set 0.40250000729
+        execute as @e[type=#zombie,tag=!Iruru.lv5] if score $day iruru.daycount matches 31..40 run tag @s add Iruru.lv5
 
-    # $day = 41~50 (HP-1.5x - ATK-1.5x - SPD-2.0x - Range-2.0x)(lv6)
-        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 21.. run function status:movement_speed
-        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 21.. run function status:attack_damage
-        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 21.. run function status:max_health
-        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 21.. run function status:follow_range
-        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 21.. run tag @s add Iruru.lv6
+    # $day = 41~ (HP-1.5x - ATK-1.5x - SPD-2.0x - Range-2.0x)(lv6)
+        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 41.. run function status:movement_speed
+        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 41.. run function status:attack_damage
+        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 41.. run function status:max_health
+        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 41.. run function status:follow_range
+        execute as @e[type=#zombie,tag=!Iruru.lv6] if score $day iruru.daycount matches 41.. run tag @s add Iruru.lv6
     ## @e[type=#zombie,tag=!Iruru.power_zombie,nbt={Attributes:[{Base: 0.23000000417,Name: "minecraft:generic.movement_speed"}]}]
