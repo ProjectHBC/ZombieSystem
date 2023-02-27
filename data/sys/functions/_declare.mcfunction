@@ -10,6 +10,7 @@
     #declare tag Iruru.lv3
     #declare tag Iruru.lv4
     #declare tag Iruru.lv5
+    #declare tag Iruru.lv6
     #declare tag Iruru.deathplayer
     #declare tag Iruru.debugplayer
     #declare tag Iruru.survivor

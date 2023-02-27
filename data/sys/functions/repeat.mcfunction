@@ -10,10 +10,11 @@
         #tag @a[scores={iruru.deathcount=1..}] remove Iruru.survivor
     # 死亡メッセージを表示
         tellraw @a[scores={iruru.deathcount=1..}] [{"text": "✞復活することができません！✞","color": "red"}]
-    # deathplayerタグを設定
-        tag @a[scores={iruru.deathcount=1..}] add Iruru.deathplayer
+    # deathplayerタグを設定 - 意味ないので回避
+        #tag @a[scores={iruru.deathcount=1..}] add Iruru.deathplayer
         #tellraw @a[scores={iruru.deathcount=1..},tag=Iruru.deathplayer] {"text": "\"Iruru.deathplayer\"タグを付与しました","color": "gray"}
-        tellraw @a[scores={iruru.deathcount=1..},tag=Iruru.deathplayer] [{"text": "\"/function sys:debug_mode\"","clickEvent": {"action": "run_command","value": "/function sys:debug_mode"},"hoverEvent": {"action": "show_text","contents": "自身をデバッグチームに参加"}},{"text": "でデバッグモードをオンにします(クリックで実行)"}]
+        #tellraw @a[scores={iruru.deathcount=1..},tag=Iruru.deathplayer] [{"text": "\"/function sys:debug_mode\"","clickEvent": {"action": "run_command","value": "/function sys:debug_mode"},"hoverEvent": {"action": "show_text","contents": "自身をデバッグチームに参加"}},{"text": "でデバッグモードをオンにします(クリックで実行)"}]
+        tellraw @a[scores={iruru.deathcount=1..}] [{"text": "\"/function sys:debug_mode\"","clickEvent": {"action": "run_command","value": "/function sys:debug_mode"},"hoverEvent": {"action": "show_text","contents": "自身をデバッグチームに参加"}},{"text": "でデバッグモードを\nオンにします(クリックで実行)"}]
     # deathcountを0に設定
         scoreboard players set @a[scores={iruru.deathcount=1..}] iruru.deathcount 0
 
@@ -27,12 +28,13 @@
         execute if score $check iruru.check matches 1 if score $daytime iruru.daytime matches 1 at @a run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 0.25 0.75
 
 # dayalert
-    # $day = 1,6,11,16,21
+    # $day = 1,6,11,16,31,41
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 1 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 6 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 11 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 16 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
-        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 21 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 31 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 41 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
 
 # tag
     # survivorにタグを付与
