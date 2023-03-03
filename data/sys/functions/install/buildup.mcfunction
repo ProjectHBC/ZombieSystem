@@ -43,9 +43,9 @@
         #scoreboard players set $dayscore21 iruru.daycount 21
         #scoreboard players set $dayscore41 iruru.daycount 41
     # スピード記録用 (0.1~2.0)
-        execute if score $check iruru.check matches 0 run scoreboard players set $speed iruru.m_speed 10
+        #execute if score $check iruru.check matches 0 run scoreboard players set $speed iruru.m_speed 10
     # サバイバーの人数記録用
-        execute if score $check iruru.check matches 0 run scoreboard players set $survivor iruru.survivor 0
+        #execute if score $check iruru.check matches 0 run scoreboard players set $survivor iruru.survivor 0
     # インストールチェック用
         #scoreboard players set $install iruru.install 1
         

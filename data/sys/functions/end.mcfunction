@@ -5,5 +5,9 @@
 tellraw @a {"text": "終息...","color": "gray"}
 
 # 設定
-team empty Iruru.debugteam
-scoreboard players set $check iruru.check 0
+    # サバイバータグを剝奪
+    tag @a remove Iruru.survivor
+    # デバッグモードのプレイヤーを解除 
+    team empty Iruru.debugteam
+    # $checkを0に設定(停止状態)
+    scoreboard players set $check iruru.check 0
