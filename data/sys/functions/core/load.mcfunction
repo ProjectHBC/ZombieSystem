@@ -2,6 +2,7 @@
 #
 # データパックを読み込んだ時にロードされるファンクション
 #
+# @within tag/function minecraft:load
 
 # インストールメッセージを表示
     function sys:install/start_menu

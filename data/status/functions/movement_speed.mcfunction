@@ -1,5 +1,8 @@
 #> status:movement_speed
-## ゾンビの移動速度変更
+#
+# ゾンビの移動速度変更
+#
+# @within function sys:zombie_repeat
 
 ## 移動速度を変更する場合は"generic.movement_speed"の一番右の数字を変更してください(バニラでの移動速度は0.23000000417)
     attribute @s generic.movement_speed base set 0.46000000834

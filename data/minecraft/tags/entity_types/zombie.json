@@ -2,6 +2,7 @@
     "description": "Type zombie",
     "values": [
         "minecraft:zombie",
-        "minecraft:zombie_villager"
+        "minecraft:zombie_villager",
+        "minecraft:drowned"
     ]
 }

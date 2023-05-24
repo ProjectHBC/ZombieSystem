@@ -1,5 +1,8 @@
-#> sys:end
-# ゲームを終了用のコマンド、いるかなこれ？
+#> cmd:game_end
+#
+# ゲームを終了用のコマンド
+#
+# @public
 
 # 終了を報告
 tellraw @a {"text": "終息...","color": "gray"}

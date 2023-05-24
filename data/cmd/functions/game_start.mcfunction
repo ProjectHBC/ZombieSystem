@@ -1,5 +1,8 @@
-#> sys:start
-#ゲーム開始用のコマンド
+#> cmd:game_start
+#
+# ゲーム開始用のコマンド
+#
+# @public
 
 # スタートを報告
 tellraw @a {"text": "世界が悪夢に包まれる…","color": "gray"}
@@ -13,8 +16,12 @@ tellraw @a {"text": "世界が悪夢に包まれる…","color": "gray"}
     time set 0
     # $dayを0に設定
     scoreboard players set $day iruru.daycount 0
+    # ゾンビの合計キル数を0に設定
+    scoreboard players set @a iruru.killed_zs 0
     # $checkを1に設定(起動状態)
     scoreboard players set $check iruru.check 1
     # サバイバーのタグを設定
-    tag @a[gamemode=survival] add Iruru.survivor
+    tag @a[gamemode=survival,team=!Iruru.debugteam] add Iruru.survivor
+    # ゾンビキル数カウントを設定
+    scoreboard objectives setdisplay list iruru.killed_zs
     

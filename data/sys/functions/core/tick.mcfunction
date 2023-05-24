@@ -2,6 +2,7 @@
 #
 # 常時実行のファンクション
 #
+# @within tag/function minecraft:tick
 
 # 常時実行(スペクテイターモード変更と日付とspeed_check)
     function sys:repeat

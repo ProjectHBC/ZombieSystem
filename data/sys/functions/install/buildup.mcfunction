@@ -2,7 +2,7 @@
 #
 # 必要な準備データを生成
 #
-# @within tag/function sys:install/buildup
+# @within tag/function sys:core/load
 
 # スコアボード作成
     # 死亡回数を記録用
@@ -21,14 +21,23 @@
         scoreboard objectives add iruru.check dummy
     # インストール記録用 ## ストレージあったけど、使わないから無視
         #scoreboard objectives add iruru.install dummy
+    # ゾンビのレベル記録用
+        scoreboard objectives add iruru.levels dummy
+    # ゾンビのキル数記録用
+        scoreboard objectives add iruru.killed_zs dummy "ゾンビの合計キル数"
+        scoreboard objectives add iruru.killed_z minecraft.killed:zombie
+        scoreboard objectives add iruru.killed_zv minecraft.killed:zombie_villager
+        scoreboard objectives add iruru.killed_d minecraft.killed:drowned
 
 # チーム作成とモディファイ
-    # 作成:デバッグ用
+    # create:デバッグ用
         team add Iruru.debugteam
-    # モディファイ:デバッグ用
+    # modify:デバッグ用
         team modify Iruru.debugteam color gray
-    # スコアボードを表示 - 人がいないとダメ？
+    # スコアボードを表示
         scoreboard objectives setdisplay sidebar.team.gray iruru.debug
+    # プレフィックスを設定
+        team modify Iruru.debugteam prefix {"text": "[DEAD] ","color": "gray"} 
 
 # スコア代入 - 起動中には実行されません！！
     # ゲーム作動チェック用
@@ -48,4 +57,8 @@
         #execute if score $check iruru.check matches 0 run scoreboard players set $survivor iruru.survivor 0
     # インストールチェック用
         #scoreboard players set $install iruru.install 1
+    
+# "buildup" was loaded!
+    # message
+        #tellraw @a {"text": "\"buildup\"ファイルの読み込みが完了","color": "gray"}
         
