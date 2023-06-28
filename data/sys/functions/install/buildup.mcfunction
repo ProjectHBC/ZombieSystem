@@ -28,6 +28,7 @@
         scoreboard objectives add iruru.killed_z minecraft.killed:zombie
         scoreboard objectives add iruru.killed_zv minecraft.killed:zombie_villager
         scoreboard objectives add iruru.killed_d minecraft.killed:drowned
+        scoreboard objectives add iruru.killed_h minecraft.killed:husk
     # 乱数生成用
         scoreboard objectives add iruru.rng dummy
     # debug_toggle記録用 ## scoreboardじゃないと無理では？

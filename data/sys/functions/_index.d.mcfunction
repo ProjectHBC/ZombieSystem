@@ -19,6 +19,7 @@
     #declare objective iruru.killed_z
     #declare objective iruru.killed_zv
     #declare objective iruru.killed_d
+    #declare objective iruru.killed_h
     #declare objective iruru.chest_num
     #declare objective iruru.rng
 
