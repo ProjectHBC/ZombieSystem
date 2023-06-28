@@ -35,12 +35,16 @@
         execute if score $check iruru.check matches 1 if score $daytime iruru.daytime matches 1 at @a run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 0.25 0.75
 
 # dayalert
-    # $day = 1,6,11,16,31,41
+    # $day = 1,4,8,11,16,21,26,31,36,41
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 1 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
-        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 6 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 4 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 8 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 11 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 16 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 21 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 26 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 31 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 36 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 41 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
 
 #> サバイバルのプレイヤー人数をカウントするscore_holder
@@ -48,7 +52,7 @@
     #declare score_holder $survivor
 
 # tag
-    # survivorタグを持つプレイヤー人数をカウント -> サバイバルのプレイヤー人数をカウント
+    # survivorタグを持つプレイヤー人数をカウント
         scoreboard players set $survivor iruru.survivor 0
         execute as @a[tag=Iruru.survivor] run scoreboard players add $survivor iruru.survivor 1
     # survivorが0人になったときゲームを終了する

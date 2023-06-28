@@ -4,7 +4,7 @@
 #
 # @within tag/function sys:core/load
 
-# スコアボード作成
+# スコアボードとストレージを作成
     # 死亡回数を記録用
         scoreboard objectives add iruru.deathcount deathCount
     # 日にち記録用
@@ -28,6 +28,10 @@
         scoreboard objectives add iruru.killed_z minecraft.killed:zombie
         scoreboard objectives add iruru.killed_zv minecraft.killed:zombie_villager
         scoreboard objectives add iruru.killed_d minecraft.killed:drowned
+    # 乱数生成用
+        scoreboard objectives add iruru.rng dummy
+    # debug_toggle記録用 ## scoreboardじゃないと無理では？
+        #data merge storage debug_toggle {"debug_toggle":"false"}
 
 # チーム作成とモディファイ
     # create:デバッグ用
@@ -38,6 +42,21 @@
         scoreboard objectives setdisplay sidebar.team.gray iruru.debug
     # プレフィックスを設定
         team modify Iruru.debugteam prefix {"text": "[DEAD] ","color": "gray"} 
+
+# shulker_box
+    # 基礎チェストストレージを定義
+    data modify storage iruru:based_tag_chest tag set value {display:{Name:'{"text":"chest"}'}}
+
+    # 設置
+    setblock 0 1 0 shulker_box replace
+    data merge block 0 1 0 {Items:[{Slot:0b,id:"minecraft:chest",Count:1b}]}
+
+    # 強制ロード
+    forceload add 0 0
+
+# 乱数生成用
+    # iruru.rngスコアを4に設定
+    scoreboard players set #4 iruru.rng 4
 
 # スコア代入 - 起動中には実行されません！！
     # ゲーム作動チェック用

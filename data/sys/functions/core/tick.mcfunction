@@ -8,5 +8,5 @@
     function sys:repeat
 
 # ゾンビのステータス変更
-    execute if score $check iruru.check matches 1 run function sys:zombie_repeat
+    execute if score $check iruru.check matches 1 run function sys:zombie_status/controller
     

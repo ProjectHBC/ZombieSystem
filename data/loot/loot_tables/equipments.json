@@ -1,0 +1,284 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 100,
+            "name": "minecraft:air"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:arrow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:fire_charge",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 100,
+            "name": "minecraft:air"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 80,
+            "name": "minecraft:wooden_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:stone_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:golden_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:diamond_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 80,
+            "name": "minecraft:wooden_axe"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:stone_axe"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:golden_axe"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:diamond_axe"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:shield"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_damage",
+                "damage": {
+                  "min": 10,
+                  "max": 100
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 30,
+            "name": "minecraft:golden_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Enchantments:[{id:\"minecraft:smite\",lvl:10s}]}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 30,
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"すごい弓\",\"color\":\"gold\",\"bold\":true,\"italic\":false}'},Enchantments:[{id:\"minecraft:smite\",lvl:3s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:power\",lvl:5s},{id:\"minecraft:punch\",lvl:2s},{id:\"minecraft:flame\",lvl:2s}]}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 100,
+            "name": "minecraft:air"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 80,
+            "name": "minecraft:leather_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 80,
+            "name": "minecraft:leather_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 80,
+            "name": "minecraft:leather_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 80,
+            "name": "minecraft:leather_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:golden_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:golden_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:golden_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:golden_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 60,
+            "name": "minecraft:chainmail_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 60,
+            "name": "minecraft:chainmail_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 60,
+            "name": "minecraft:chainmail_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 60,
+            "name": "minecraft:chainmail_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "minecraft:diamond_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "minecraft:diamond_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "minecraft:diamond_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "minecraft:diamond_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:leather_helmet",
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:respiration"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:leather_boots",
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:feather_falling"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:netherite_chestplate",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Zombie Armor\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Pay the price for the monster power.\",\"color\":\"dark_gray\",\"italic\":false}','{\"text\":\"Mythic Armor\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}']},Unbreakable:1b,Enchantments:[{id:\"minecraft:protection\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:1,Operation:0,UUID:[I;-502887285,289556028,-1789043347,-1539536221],Slot:\"chest\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:-10,Operation:0,UUID:[I;1059718868,1805207424,-1991416206,2014796088],Slot:\"chest\"}]}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 30,
+            "name": "minecraft:iron_boots",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Enchantments:[{id:\"minecraft:feather_falling\",lvl:10s}]}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 30,
+            "name": "minecraft:turtle_helmet",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Enchantments:[{id:\"minecraft:respiration\",lvl:10s},{id:\"minecraft:aqua_affinity\",lvl:10s}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

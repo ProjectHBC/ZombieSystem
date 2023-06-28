@@ -19,6 +19,8 @@
     #declare objective iruru.killed_z
     #declare objective iruru.killed_zv
     #declare objective iruru.killed_d
+    #declare objective iruru.chest_num
+    #declare objective iruru.rng
 
 #> デバッグ用のチーム
 # @within function sys:**
@@ -33,6 +35,27 @@
 #> デバッグ用のタグ(未使用)
 # @private
     #declare tag Iruru.debugplayer
+
+#> 乱数生成記録用
+# @within function
+#   sys:install/buildup
+#   loot:random
+    #declare score_holder #4
+
+#> IruruLevels
+#
+# ゾンビのステータスをレベル別に分けて定義したもの
+# @within function sys:zombie_status/**
+    #declare tag Iruru.lv1
+    #declare tag Iruru.lv2
+    #declare tag Iruru.lv3
+    #declare tag Iruru.lv4
+    #declare tag Iruru.lv5
+    #declare tag Iruru.lv6
+    #declare tag Iruru.lv7
+    #declare tag Iruru.lv8
+    #declare tag Iruru.lv9
+    #declare tag Iruru.lv10
 
 #> ゾンビレベル記録用
 # @within function
@@ -61,3 +84,14 @@
 #   sys:core/tick
 #   cmd:game_*
     #declare score_holder $check
+
+#> 基礎チェストストレージ
+# @within function
+#   sys:install/buildup
+#   sys:chest/modify
+    #declare storage iruru:based_tag_chest
+
+#> チェストストレージ
+# @within function
+#   sys:chest/modify
+    #declare storage iruru:chest
