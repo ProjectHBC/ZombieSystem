@@ -5,7 +5,7 @@
 # @public
 
 # スタートを報告
-tellraw @a {"text": "世界が悪夢に包まれる…","color": "gray"}
+    tellraw @a {"text": "世界が悪夢に包まれる…","color": "gray"}
 
 # 設定
     # ゲームモードをサバイバルに変更
@@ -24,4 +24,6 @@ tellraw @a {"text": "世界が悪夢に包まれる…","color": "gray"}
     tag @a[gamemode=survival,team=!Iruru.debugteam] add Iruru.survivor
     # ゾンビキル数カウントを設定
     scoreboard objectives setdisplay list iruru.killed_zs
+    # improvedmobsのdificultyを0に設定
+    improvedmobs difficulty set 0
     

@@ -5,13 +5,13 @@
 # @public
 
 # チームを退出
-team leave @s
+    team leave @s
 
 # ゲームモードをサバイバルに変更
-gamemode survival @s
+    gamemode survival @s
 
 # サバイバータグを付与
-tag @s add Iruru.survivor
+    tag @s add Iruru.survivor
 
 # メッセージ
-tellraw @s {"text": "復活しました！","color": "green"}
+    tellraw @s {"text": "復活しました！","color": "green"}

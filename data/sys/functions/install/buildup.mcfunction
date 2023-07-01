@@ -31,8 +31,8 @@
         scoreboard objectives add iruru.killed_h minecraft.killed:husk
     # 乱数生成用
         scoreboard objectives add iruru.rng dummy
-    # debug_toggle記録用 ## scoreboardじゃないと無理では？
-        #data merge storage debug_toggle {"debug_toggle":"false"}
+    # スロットナンバー記録用
+        scoreboard objectives add iruru.chest_num dummy
 
 # チーム作成とモディファイ
     # create:デバッグ用

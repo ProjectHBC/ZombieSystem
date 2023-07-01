@@ -5,8 +5,8 @@
 # @within advancement/changed_inventory
 
 # コマンド
-function sys:chest/modify
-#say changed
+    function sys:chest/modify
+    #say changed
 
 # 進捗をリセット
-advancement revoke @s only adv:changed_inventory
+    advancement revoke @s only adv:changed_inventory

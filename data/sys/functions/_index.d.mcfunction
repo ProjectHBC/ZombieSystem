@@ -4,6 +4,8 @@
 #
 # @within function sys:**
 
+### ----- objectives -----
+
 #> 回数記録用objectives(scoreboards)
 # @public
     #declare objective iruru.deathcount
@@ -15,13 +17,31 @@
     #declare objective iruru.check
     #declare objective iruru.install
     #declare objective iruru.levels
+
+#> ゾンビキル数
+# @within function
+#   sys:install/buildup
+#   sys:repeat
+#   cmd:game_**
     #declare objective iruru.killed_zs
     #declare objective iruru.killed_z
     #declare objective iruru.killed_zv
     #declare objective iruru.killed_d
     #declare objective iruru.killed_h
+
+#> インベントリスロット番号
+# @within function
+#   sys:install/buildup
+#   sys:chest/**
     #declare objective iruru.chest_num
+
+#> 乱数生成用
+# @within function
+#   sys:install/buildup
+#   loot:random
     #declare objective iruru.rng
+
+### ----------
 
 #> デバッグ用のチーム
 # @within function sys:**
@@ -36,6 +56,11 @@
 #> デバッグ用のタグ(未使用)
 # @private
     #declare tag Iruru.debugplayer
+
+#> インベントリスロット番号記録用
+# @within function
+#   sys:chest/**
+    #declare score_holder #Slot
 
 #> 乱数生成記録用
 # @within function

@@ -5,7 +5,7 @@
 # @public
 
 # 終了を報告
-tellraw @a {"text": "終息...","color": "gray"}
+    tellraw @a {"text": "終息...","color": "gray"}
 
 # 設定
     # サバイバータグを剝奪

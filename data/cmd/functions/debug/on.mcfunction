@@ -1,4 +1,4 @@
-#> cmd:debug
+#> cmd:debug/on
 #
 # デバッグ用のスコアボードを表示
 #
@@ -6,9 +6,3 @@
 
 # スコアボードを表示
     scoreboard objectives setdisplay sidebar iruru.debug
-
-# スコアボードを非表示
-    #scoreboard objectives setdisplay sidebar
-
-# toggle
-    #nothing
