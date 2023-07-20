@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "effects": {
+            "minecraft:resistance": {
+              "amplifier": 0
+            }
+          }
+        },
+        "item": {
+          "item": "minecraft:potion",
+          "potion": "minecraft:empty",
+          "nbt": "{iruru:resistance_potion}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "adv:effect/resistance/lv2"
+  }
+}

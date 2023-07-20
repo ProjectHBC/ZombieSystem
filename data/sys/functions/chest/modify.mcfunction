@@ -15,7 +15,6 @@
     execute store result score #Slot iruru.chest_num run data get storage iruru:chest tag.Slot
 
 # スロットを削除
-    #data modify storage iruru:chest tag.Slot set value 0b
     data remove storage iruru:chest tag.Slot
 
 # ストレージからシュルカーボックスに移行

@@ -4,10 +4,6 @@
 #
 # @within function sys:core/tick
 
-#> 死んだプレイヤーに付けられるタグ(未使用)
-# @private
-    #declare tag Iruru.deathplayer
-
 # 死亡したプレイヤーに実行
     # スペクテイターモードに変更
         execute if score $check iruru.check matches 1 run gamemode spectator @a[scores={iruru.deathcount=1..}]
@@ -15,11 +11,6 @@
         tag @a[scores={iruru.deathcount=1..}] remove Iruru.survivor
     # 死亡メッセージを表示
         tellraw @a[scores={iruru.deathcount=1..}] [{"text": "✞復活することができません！✞","color": "red"}]
-    # deathplayerタグを設定 - 意味ないので回避
-        #tag @a[scores={iruru.deathcount=1..}] add Iruru.deathplayer
-        #tellraw @a[scores={iruru.deathcount=1..},tag=Iruru.deathplayer] {"text": "\"Iruru.deathplayer\"タグを付与しました","color": "gray"}
-        #tellraw @a[scores={iruru.deathcount=1..},tag=Iruru.deathplayer] [{"text": "\"/function sys:debug_mode\"","clickEvent": {"action": "run_command","value": "/function sys:debug_mode"},"hoverEvent": {"action": "show_text","contents": "自身をデバッグチームに参加"}},{"text": "でデバッグモードをオンにします(クリックで実行)"}]
-        #tellraw @a[scores={iruru.deathcount=1..}] [{"text": "\"/function sys:debug_mode\"","clickEvent": {"action": "run_command","value": "/function sys:debug_mode"},"hoverEvent": {"action": "show_text","contents": "自身をデバッグチームに参加"}},{"text": "でデバッグモードを\nオンにします(クリックで実行)"}]
     # デバッグモードに設定
         execute as @a[scores={iruru.deathcount=1..}] run function cmd:debug_mode
     # deathcountを0に設定
@@ -33,6 +24,8 @@
     # 日付を表示
         execute if score $check iruru.check matches 1 if score $daytime iruru.daytime matches 1 run title @a actionbar [{"score":{"name":"$day","objective":"iruru.daycount"},"color": "white"},{"text": "日目","color": "white"}]
         execute if score $check iruru.check matches 1 if score $daytime iruru.daytime matches 1 at @a run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 0.25 0.75
+    # 昼間だけ時間を4x(2日以降)
+        execute if score $check iruru.check matches 1 if score $day iruru.daycount matches 2.. if score $daytime iruru.daytime matches 1..12500 run time add 3t
 
 # dayalert
     # $day = 1,4,8,11,16,21,26,31,36,41
@@ -75,18 +68,6 @@
     # levels
         execute if score $check iruru.check matches 1 run execute store result score レベル iruru.debug run scoreboard players get $levels iruru.levels
 
-#> スピード変更用のscore_holder(未使用)
-# @private
-    #declare score_holder $speed
-
-# zombie
-    # speed_check(under) , ..0
-        #execute if score $speed iruru.m_speed matches ..0 run scoreboard players set $speed iruru.m_speed 10
-        #execute if score $speed iruru.m_speed matches ..0 run tellraw @a {"text": "$speedの範囲は1~20です","color": "red"}
-    # speed_check(over) , 21..
-        #execute if score $speed iruru.m_speed matches 21.. run scoreboard players set $speed iruru.m_speed 10
-        #execute if score $speed iruru.m_speed matches 21.. run tellraw @a {"text": "$speedの範囲は1~20です","color": "red"}
-
 # killed_zombie
     # killed_zombie(calculation)
         scoreboard players operation @a[scores={iruru.killed_z=1..}] iruru.killed_zs += @a[scores={iruru.killed_z=1..}] iruru.killed_z
@@ -100,3 +81,6 @@
         scoreboard players set @a iruru.killed_d 0
         scoreboard players set @a iruru.killed_h 0
         
+# beacon
+    # レーダー探知機を持っているか
+        execute as @a at @s if predicate sys:has_beacon run function sys:beacon/has_beacon

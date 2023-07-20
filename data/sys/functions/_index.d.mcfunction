@@ -53,10 +53,6 @@
 #   cmd:**
     #declare tag Iruru.survivor
 
-#> デバッグ用のタグ(未使用)
-# @private
-    #declare tag Iruru.debugplayer
-
 #> インベントリスロット番号記録用
 # @within function
 #   sys:chest/**
@@ -121,3 +117,4 @@
 # @within function
 #   sys:chest/modify
     #declare storage iruru:chest
+    

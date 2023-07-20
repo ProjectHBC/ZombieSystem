@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": {
+            "effects": {
+              "minecraft:speed": {
+                "amplifier": 0
+              }
+            }
+          },
+          "item": {
+            "item": "minecraft:potion",
+            "potion": "minecraft:empty",
+            "nbt": "{iruru:speed_potion}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "adv:effect/speed/lv2"
+    }
+  }
+  
