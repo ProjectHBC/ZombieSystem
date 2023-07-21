@@ -7,11 +7,11 @@
 # @within function sys:zombie_status/controller
 
 # ステータス変更 (HP-1.0x - ATK-1.5x - SPD-1.3x - Range-2.0x - Jump-lv1) - lv7
-#attribute @s generic.max_health base set 20.0
-attribute @s generic.attack_damage base set 4.5
-attribute @s generic.movement_speed base set 0.29900000542
-attribute @s generic.follow_range base set 70.0
-effect give @s jump_boost 999999 0 true
+    #attribute @s generic.max_health base set 20.0
+    attribute @s generic.attack_damage base set 4.5
+    attribute @s generic.movement_speed base set 0.29900000542
+    attribute @s generic.follow_range base set 70.0
+    effect give @s jump_boost 999999 0 true
 
 # タグを付与
-tag @s add Iruru.lv7
+    tag @s add Iruru.lv7

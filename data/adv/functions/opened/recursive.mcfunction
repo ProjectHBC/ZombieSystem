@@ -9,4 +9,4 @@
     execute if block ~ ~ ~ air positioned ^ ^ ^0.5 run function adv:opened/recursive
 
 # チェストデータを変更
-    function loot:chest_random
+    function loot:chest_loot/controller
