@@ -80,7 +80,13 @@
         scoreboard players set @a iruru.killed_zv 0
         scoreboard players set @a iruru.killed_d 0
         scoreboard players set @a iruru.killed_h 0
-        
+
+# event
+    # コントローラー
+        function sys:event/controller
+    # ジャイアントの近くにいるか
+        #execute as @a at @s if predicate sys:near_by_giant run effect give @s poison 3 3 false
+
 # beacon
     # レーダー探知機を持っているか
         execute as @a at @s if predicate sys:has_beacon run function sys:beacon/has_beacon

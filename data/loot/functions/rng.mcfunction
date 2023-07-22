@@ -2,7 +2,9 @@
 #
 # 乱数を生成します
 #
-# @within function loot:**
+# @within function 
+#    loot:**
+#    event:**
 
 # AECを召喚
     summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["RNG"]}

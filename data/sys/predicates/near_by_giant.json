@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:giant",
+    "distance": {
+      "x": {
+        "min": 0,
+        "max": 30
+      },
+      "y": {
+        "min": 0,
+        "max": 30
+      },
+      "z": {
+        "min": 0,
+        "max": 30
+      }
+    }
+  }
+}
