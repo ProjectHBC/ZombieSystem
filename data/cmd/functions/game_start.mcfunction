@@ -25,5 +25,5 @@
     # ゾンビキル数カウントを設定
         scoreboard objectives setdisplay list iruru.killed_zs
     # improvedmobsのdificultyを0に設定
-        improvedmobs difficulty set 0
+        #improvedmobs difficulty set 0
     

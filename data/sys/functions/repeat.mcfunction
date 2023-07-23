@@ -24,8 +24,8 @@
     # 日付を表示
         execute if score $check iruru.check matches 1 if score $daytime iruru.daytime matches 1 run title @a actionbar [{"score":{"name":"$day","objective":"iruru.daycount"},"color": "white"},{"text": "日目","color": "white"}]
         execute if score $check iruru.check matches 1 if score $daytime iruru.daytime matches 1 at @a run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 0.25 0.75
-    # 昼間だけ時間を4x(2日以降)
-        execute if score $check iruru.check matches 1 if score $day iruru.daycount matches 2.. if score $daytime iruru.daytime matches 1..12500 run time add 3t
+    # 昼間だけ時間を2x(2日以降)
+        execute if score $check iruru.check matches 1 if score $day iruru.daycount matches 2.. if score $daytime iruru.daytime matches 1..12500 run time add 1t
 
 # dayalert
     # $day = 1,4,8,11,16,21,26,31,36,41
@@ -86,6 +86,11 @@
         function sys:event/controller
     # ジャイアントの近くにいるか
         #execute as @a at @s if predicate sys:near_by_giant run effect give @s poison 3 3 false
+
+# in_water
+    # 水の中で泳いでいる状態であるときに毒状態にする
+        effect give @a[predicate=sys:is_in_water] poison 2 1 true
+        #execute as @a at @s if predicate sys:is_in_water run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:19,Amplifier:0b,Duration:2,ShowParticles:1b}]}
 
 # beacon
     # レーダー探知機を持っているか
