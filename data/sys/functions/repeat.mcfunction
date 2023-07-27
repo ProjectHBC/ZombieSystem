@@ -94,4 +94,4 @@
 
 # beacon
     # レーダー探知機を持っているか
-        execute as @a at @s if predicate sys:has_beacon run function sys:beacon/has_beacon
+        #execute as @a at @s if predicate sys:has_beacon run function sys:beacon/has_beacon
