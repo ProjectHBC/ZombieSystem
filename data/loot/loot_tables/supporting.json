@@ -1,249 +1,253 @@
 {
-    "type": "minecraft:chest",
-    "pools": [
-      {
-        "rolls": {
-          "min": 2,
-          "max": 4
-        },
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 100,
-            "name": "minecraft:air"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 80,
-            "name": "minecraft:torch",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 8
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:red_bed"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:crafting_table"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:chest",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"chest\"}'}}"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:bucket"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:ladder",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 8
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:oak_boat"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:birch_boat"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:spruce_boat"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:jungle_boat"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:acacia_boat"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:dark_oak_boat"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:minecart"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:map"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 70,
-            "name": "minecraft:paper",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 4
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:name_tag"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:painting"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 40,
-            "name": "minecraft:experience_bottle",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 30,
-            "name": "minecraft:potion",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"RedBull ~翼を授ける~\",\"color\":\"dark_red\",\"bold\":true,\"italic\":true}'},CustomPotionEffects:[{Id:8,Amplifier:30b,Duration:200,ShowParticles:1b},{Id:28,Amplifier:3b,Duration:600,ShowParticles:1b}],CustomPotionColor:16775184}"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 30,
-            "name": "minecraft:potion",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Monster Energy\",\"color\":\"green\",\"bold\":true,\"italic\":true}'},HideFlags:32,CustomPotionEffects:[{Id:1,Amplifier:5b,Duration:400},{Id:4,Amplifier:5b,Duration:600},{Id:5,Amplifier:5b,Duration:400},{Id:8,Amplifier:3b,Duration:400},{Id:9,Amplifier:1b,Duration:40},{Id:10,Amplifier:3b,Duration:200},{Id:15,Amplifier:1b,Duration:40},{Id:16,Amplifier:1b,Duration:600},{Id:17,Amplifier:3b,Duration:20},{Id:18,Amplifier:3b,Duration:600},{Id:20,Amplifier:1b,Duration:40}],CustomPotionColor:2647068}"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 30,
-            "name": "minecraft:potion",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Zombified Potion\",\"color\":\"gold\",\"bold\":true}',Lore:['{\"text\":\"ゾンビのような力を得る…\",\"color\":\"dark_gray\"}']},HideFlags:32,CustomPotionEffects:[{Id:5,Amplifier:3b,Duration:3600},{Id:10,Amplifier:10b,Duration:3600},{Id:16,Amplifier:1b,Duration:3600},{Id:17,Amplifier:1b,Duration:3600},{Id:18,Amplifier:2b,Duration:3600}],CustomPotionColor:16740111}"
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 30,
-            "name": "minecraft:ender_chest"
-          }
-        ]
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
       },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 100,
-            "name": "minecraft:air"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 70,
-            "name": "minecraft:wooden_pickaxe"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:stone_pickaxe"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:golden_pickaxe"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 70,
-            "name": "minecraft:wooden_shovel"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:stone_shovel"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:golden_shovel"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 70,
-            "name": "minecraft:wooden_hoe"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:stone_hoe"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 60,
-            "name": "minecraft:golden_hoe"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 80,
-            "name": "minecraft:fishing_rod"
-          }
-        ]
-      }
-    ]
-  }
-  
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "name": "minecraft:air"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 80,
+          "name": "minecraft:torch",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:red_bed"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:crafting_table"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:chest",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"chest\"}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:ladder",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:oak_boat"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:birch_boat"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:spruce_boat"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:jungle_boat"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:acacia_boat"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:dark_oak_boat"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:minecart"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:name_tag"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:painting"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 40,
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"RedBull ~翼を授ける~\",\"color\":\"dark_red\",\"bold\":true,\"italic\":true}'},CustomPotionEffects:[{Id:8,Amplifier:30b,Duration:200,ShowParticles:1b},{Id:28,Amplifier:3b,Duration:600,ShowParticles:1b}],CustomPotionColor:16775184}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Monster Energy\",\"color\":\"green\",\"bold\":true,\"italic\":true}'},HideFlags:32,CustomPotionEffects:[{Id:1,Amplifier:5b,Duration:400},{Id:4,Amplifier:5b,Duration:600},{Id:5,Amplifier:5b,Duration:400},{Id:8,Amplifier:3b,Duration:400},{Id:9,Amplifier:1b,Duration:40},{Id:10,Amplifier:3b,Duration:200},{Id:15,Amplifier:1b,Duration:40},{Id:16,Amplifier:1b,Duration:600},{Id:17,Amplifier:3b,Duration:20},{Id:18,Amplifier:3b,Duration:600},{Id:20,Amplifier:1b,Duration:40}],CustomPotionColor:2647068}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Zombified Potion\",\"color\":\"gold\",\"bold\":true}',Lore:['{\"text\":\"ゾンビのような力を得る…\",\"color\":\"dark_gray\"}']},HideFlags:32,CustomPotionEffects:[{Id:5,Amplifier:3b,Duration:3600},{Id:10,Amplifier:10b,Duration:3600},{Id:16,Amplifier:1b,Duration:3600},{Id:17,Amplifier:1b,Duration:3600},{Id:18,Amplifier:2b,Duration:3600}],CustomPotionColor:16740111}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "minecraft:ender_chest"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:totem_of_undying"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "name": "minecraft:air"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "name": "minecraft:wooden_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:stone_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:golden_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "name": "minecraft:wooden_shovel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:stone_shovel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:golden_shovel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "name": "minecraft:wooden_hoe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:stone_hoe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:golden_hoe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 80,
+          "name": "minecraft:fishing_rod"
+        }
+      ]
+    }
+  ]
+}
