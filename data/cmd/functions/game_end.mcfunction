@@ -12,5 +12,7 @@
     tag @a remove Iruru.survivor
     # デバッグモードのプレイヤーを解除 
     team empty Iruru.debugteam
+    # $dayを51日に設定 - speed = 0 (停止状態だと無効)
+    #scoreboard players set $day iruru.daycount 51
     # $checkを0に設定(停止状態)
     scoreboard players set $check iruru.check 0

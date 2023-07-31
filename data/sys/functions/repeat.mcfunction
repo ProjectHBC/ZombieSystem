@@ -28,7 +28,7 @@
         execute if score $check iruru.check matches 1 if score $day iruru.daycount matches 2.. if score $daytime iruru.daytime matches 1..12500 run time add 1t
 
 # dayalert
-    # $day = 1,4,8,11,16,21,26,31,36,41
+    # $day = 1,4,8,11,16,21,26,31,36,41,51
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 1 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 4 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 8 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
@@ -39,6 +39,7 @@
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 31 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 36 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 41 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 51 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
 
 #> サバイバルのプレイヤー人数をカウントするscore_holder
 # @private
@@ -83,7 +84,7 @@
 
 # event
     # コントローラー
-        function sys:event/controller
+        #function sys:event/controller
     # ジャイアントの近くにいるか
         #execute as @a at @s if predicate sys:near_by_giant run effect give @s poison 3 3 false
 
