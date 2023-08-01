@@ -11,10 +11,10 @@
         scoreboard objectives add iruru.daycount dummy
     # 時間記録用
         scoreboard objectives add iruru.daytime dummy
-    # スピード記録用
-        scoreboard objectives add iruru.m_speed dummy
     # サバイバーの人数記録用
         scoreboard objectives add iruru.survivor dummy
+    # サーバーの人数記録用(計算用)
+        scoreboard objectives add iruru.player dummy
     # デバッグ用
         scoreboard objectives add iruru.debug dummy "情報(debug)"
     # ゲーム作動チェック用
@@ -58,8 +58,3 @@
 # 乱数生成用
     # iruru.rngスコアを4に設定
         scoreboard players set #4 iruru.rng 4
-
-# スコア代入 - 起動中には実行されません！！
-    # 日にち記録用
-        execute if score $check iruru.check matches 0 run scoreboard players set $day iruru.daycount 0
-        execute if score $check iruru.check matches 0 run scoreboard players set $daytime iruru.daytime 0

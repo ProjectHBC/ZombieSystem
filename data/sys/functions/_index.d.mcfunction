@@ -43,6 +43,18 @@
 #   sys:repeat
     #declare score_holder $daytime
 
+#> 参加人数記録用
+# @within function
+#   sys:**
+#   cmd:game_**
+    #declare objective iruru.player
+
+#> 参加人数記録用
+# @within function
+#   sys:**
+#   cmd:game_**
+    #declare score_holder $player
+
 #> 生存者数記録用
 # @within function
 #   sys:**

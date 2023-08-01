@@ -16,3 +16,6 @@
     #scoreboard players set $day iruru.daycount 51
     # $checkを0に設定(停止状態)
     scoreboard players set $check iruru.check 0
+
+# デバッグ
+    #setblock 0 105 0 minecraft:diamond_block

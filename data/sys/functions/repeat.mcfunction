@@ -46,11 +46,15 @@
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 51 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
 
 # tag
+    # サーバーにいるプレイヤー人数をカウント
+        execute store result score $player iruru.player if entity @a
+    # サーバーにいるプレイヤー人数が0のときに一時停止する
+        execute if score $check iruru.check matches 1 if score $player iruru.player matches 0 run function cmd:game_pause
     # survivorタグを持つプレイヤー人数をカウント
         scoreboard players set $survivor iruru.survivor 0
         execute as @a[tag=Iruru.survivor] run scoreboard players add $survivor iruru.survivor 1
     # survivorが0人になったときゲームを終了する
-        execute if score $check iruru.check matches 1 if score $survivor iruru.survivor matches 0 run function cmd:game_end
+        execute if score $check iruru.check matches 1 if score $survivor iruru.survivor matches 0 unless score $player iruru.player matches 0 run function cmd:game_end
 
 #> debug-mode用のscore_holder
 # @private
