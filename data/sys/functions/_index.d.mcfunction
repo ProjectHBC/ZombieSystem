@@ -1,22 +1,106 @@
 #> sys:_index.d
 #
-# スコアの宣言
+# スコアの宣言、宣言の範囲は気にしないで…
 #
-# @within function sys:**
+# @within function 
+#   sys:**
+#   **
 
-### ----- objectives -----
-
-#> 回数記録用objectives(scoreboards)
-# @public
-    #declare objective iruru.deathcount
-    #declare objective iruru.daycount
-    #declare objective iruru.daytime
-    #declare objective iruru.m_speed
-    #declare objective iruru.survivor
-    #declare objective iruru.debug
+#> 実行判定
+#
+# ゲームが起動中かの判定に用いられる(今思うとstorageでも良かった)
+#
+# @within function **
     #declare objective iruru.check
-    #declare objective iruru.install
+
+#> 実行判定
+# @within function
+#   sys:install/buildup
+#   sys:repeat
+#   sys:core/tick
+#   cmd:game_*
+    #declare score_holder $check
+
+#> 日付記録用
+# @within function **
+    #declare objective iruru.daycount
+
+#> 日付記録用
+# @within function
+#   sys:install/buildup
+#   sys:repeat
+#   sys:zombie_repeat 
+#   cmd:game_*
+    #declare score_holder $day
+
+#> 現在時間記録用
+# @within function **
+    #declare objective iruru.daytime
+
+#> 現在時間記録用
+# @within function
+#   sys:install/buildup
+#   sys:repeat
+    #declare score_holder $daytime
+
+#> 生存者数記録用
+# @within function
+#   sys:**
+#   cmd:game_**
+    #declare objective iruru.survivor
+
+#> 生存者数記録用
+# @within function
+#   sys:**
+#   cmd:game_**
+    #declare score_holder $survivor
+
+#> サバイバータグ
+# @within function
+#   sys:repeat
+#   cmd:**
+    #declare tag Iruru.survivor
+
+#> デバッグスコアボード
+#
+# 情報(現在時刻、日にち、レベル、生存者数)を掲載したスコアボード
+#
+# @within function
+#   sys:**
+#   cmd:**
+    #declare objective iruru.debug
+
+#> デバッグ用のチーム
+# @within function sys:**
+    #declare team Iruru.debugteam
+
+#> ゾンビレベル
+# @within function
+#   sys:**
+#   cmd:game_**
     #declare objective iruru.levels
+
+#> ゾンビレベル
+# @within function
+#   sys:repeat
+#   sys:zombie_repeat
+    #declare score_holder $levels
+
+#> IruruZombieLevels
+#
+# ゾンビのステータスをレベル別に分けて定義したもの
+#
+# @within function sys:zombie_status/**
+    #declare tag Iruru.lv1
+    #declare tag Iruru.lv2
+    #declare tag Iruru.lv3
+    #declare tag Iruru.lv4
+    #declare tag Iruru.lv5
+    #declare tag Iruru.lv6
+    #declare tag Iruru.lv7
+    #declare tag Iruru.lv8
+    #declare tag Iruru.lv9
+    #declare tag Iruru.lv10
 
 #> ゾンビキル数
 # @within function
@@ -35,77 +119,22 @@
 #   sys:chest/**
     #declare objective iruru.chest_num
 
+#> インベントリスロット番号記録用
+# @within function
+#   sys:chest/**
+    #declare score_holder #Slot
+
 #> 乱数生成用
 # @within function
 #   sys:install/buildup
 #   loot:random
     #declare objective iruru.rng
 
-### ----------
-
-#> デバッグ用のチーム
-# @within function sys:**
-    #declare team Iruru.debugteam
-
-#> サバイバータグ
-# @within function
-#   sys:repeat
-#   cmd:**
-    #declare tag Iruru.survivor
-
-#> インベントリスロット番号記録用
-# @within function
-#   sys:chest/**
-    #declare score_holder #Slot
-
 #> 乱数生成記録用
 # @within function
 #   sys:install/buildup
 #   loot:random
     #declare score_holder #4
-
-#> IruruLevels
-#
-# ゾンビのステータスをレベル別に分けて定義したもの
-# @within function sys:zombie_status/**
-    #declare tag Iruru.lv1
-    #declare tag Iruru.lv2
-    #declare tag Iruru.lv3
-    #declare tag Iruru.lv4
-    #declare tag Iruru.lv5
-    #declare tag Iruru.lv6
-    #declare tag Iruru.lv7
-    #declare tag Iruru.lv8
-    #declare tag Iruru.lv9
-    #declare tag Iruru.lv10
-
-#> ゾンビレベル記録用
-# @within function
-#   sys:repeat
-#   sys:zombie_repeat
-    #declare score_holder $levels
-
-#> 日付を記録用
-# @within function
-#   sys:install/buildup
-#   sys:repeat
-#   sys:zombie_repeat 
-#   cmd:game_*
-    #declare score_holder $day
-
-#> 現在時間記録用
-# @within function
-#   sys:install/buildup
-#   sys:repeat
-    #declare score_holder $daytime
-
-#> 実行状態確認用
-# @within function
-#   sys:install/buildup
-#   sys:repeat
-#   sys:core/tick
-#   cmd:game_*
-    #declare score_holder $check
 
 #> 基礎チェストストレージ
 # @within function

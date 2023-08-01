@@ -4,6 +4,10 @@
 #
 # @within function sys:core/tick
 
+#> 死亡回数
+# @private
+    #declare objective iruru.deathcount
+
 # 死亡したプレイヤーに実行
     # スペクテイターモードに変更
         execute if score $check iruru.check matches 1 run gamemode spectator @a[scores={iruru.deathcount=1..}]
@@ -40,10 +44,6 @@
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 36 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 41 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $daytime iruru.daytime matches 1 if score $day iruru.daycount matches 51 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
-
-#> サバイバルのプレイヤー人数をカウントするscore_holder
-# @private
-    #declare score_holder $survivor
 
 # tag
     # survivorタグを持つプレイヤー人数をカウント

@@ -1,4 +1,4 @@
-#> adv:effect/health_boost/lv3
+#> adv:effect/resistance/lv3
 #
 # lv3のエフェクトを付与する
 #

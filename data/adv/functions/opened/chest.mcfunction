@@ -1,4 +1,4 @@
-#> adv:opened_loot_chest
+#> adv:opened/chest
 #
 # チェストを開いた時に実行
 #

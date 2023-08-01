@@ -1,4 +1,4 @@
-#> adv:placed_chest
+#> adv:placed/chest
 #
 # チェストを設置した時に実行される
 #
