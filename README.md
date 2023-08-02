@@ -22,12 +22,21 @@ Minecraft Forge 1.16.5
 #### ゲームの開始方法
 
 - ロードメニューのスタートボタン
-- /function cmd:start
+- /function cmd:game_start
+
+#### ゲームの一時停止方法
+
+- ワールドを開き直す
+- /function cmd:game_pause
+
+#### ゲームの再開方法
+
+- /function cmd:game_play
 
 #### ゲームの終了方法
 
 - プレイヤーの全滅
-- /function cmd:end
+- /function cmd:game_end
 
 ## 小ネタ/解説
 
@@ -35,7 +44,8 @@ Minecraft Forge 1.16.5
 
 #### ルートチェスト化
 
-覚えてたら書く、リリースノートに書いてありそう
+疑似的にチェストをルートチェスト化させています。
+後で書きたい（願い）、リリースノートに書いてありそう
 
 #### ゾンビ強化
 
