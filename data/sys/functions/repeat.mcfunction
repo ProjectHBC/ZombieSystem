@@ -28,8 +28,8 @@
     # 日付を表示
         execute if score $check iruru.check matches 1 if score $daytime iruru.daytime matches 1 run title @a actionbar [{"score":{"name":"$day","objective":"iruru.daycount"},"color": "white"},{"text": "日目","color": "white"}]
         execute if score $check iruru.check matches 1 if score $daytime iruru.daytime matches 1 at @a run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 0.25 0.75
-    # 昼間だけ時間を2x(2日以降)
-        execute if score $check iruru.check matches 1 if score $day iruru.daycount matches 2.. if score $daytime iruru.daytime matches 1..12500 run time add 1t
+    # 昼間だけ時間を2x(2日以降) - 不要になったため削除
+        #execute if score $check iruru.check matches 1 if score $day iruru.daycount matches 2.. if score $daytime iruru.daytime matches 1..12500 run time add 1t
 
 # dayalert
     # $day = 1,4,8,11,16,21,26,31,36,41,51
