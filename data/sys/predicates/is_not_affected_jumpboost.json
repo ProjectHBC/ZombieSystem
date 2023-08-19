@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "#minecraft:zombie",
+        "effects": {
+          "minecraft:jump_boost": {
+            "duration": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        }
+      }
+    }
+  }
+  

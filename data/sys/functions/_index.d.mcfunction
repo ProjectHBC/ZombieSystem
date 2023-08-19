@@ -16,7 +16,7 @@
 #> 実行判定
 # @within function
 #   sys:install/buildup
-#   sys:repeat
+#   sys:repeat/
 #   sys:core/tick
 #   cmd:game_*
     #declare score_holder $check
@@ -28,8 +28,7 @@
 #> 日付記録用
 # @within function
 #   sys:install/buildup
-#   sys:repeat
-#   sys:zombie_repeat 
+#   sys:repeat/ 
 #   cmd:game_*
     #declare score_holder $day
 
@@ -40,7 +39,7 @@
 #> 現在時間記録用
 # @within function
 #   sys:install/buildup
-#   sys:repeat
+#   sys:repeat/
     #declare score_holder $daytime
 
 #> 参加人数記録用
@@ -69,7 +68,7 @@
 
 #> サバイバータグ
 # @within function
-#   sys:repeat
+#   sys:repeat/
 #   cmd:**
     #declare tag Iruru.survivor
 
@@ -94,8 +93,7 @@
 
 #> ゾンビレベル
 # @within function
-#   sys:repeat
-#   sys:zombie_repeat
+#   sys:repeat/
     #declare score_holder $levels
 
 #> IruruZombieLevels
@@ -117,7 +115,7 @@
 #> ゾンビキル数
 # @within function
 #   sys:install/buildup
-#   sys:repeat
+#   sys:repeat/
 #   cmd:game_**
     #declare objective iruru.killed_zs
     #declare objective iruru.killed_z
