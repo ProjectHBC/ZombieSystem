@@ -58,3 +58,7 @@
 # 乱数生成用
     # iruru.rngスコアを4に設定
         scoreboard players set #4 iruru.rng 4
+
+    # 小ゾンビ乱数用
+        scoreboard objectives add iruru.z_rnd dummy
+        scoreboard players set #100 iruru.z_rnd 100
