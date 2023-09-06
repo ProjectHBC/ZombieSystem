@@ -56,12 +56,10 @@
         data merge block 0 1 0 {Items:[{Slot:0b,id:"minecraft:chest",Count:1b}]}
 
 # 乱数生成用
-    # iruru.rngスコアを4に設定
+    # iruru.rngスコアを設定
         scoreboard players set #4 iruru.rng 4
-
-    # 小ゾンビ乱数用
-        scoreboard objectives add iruru.z_rnd dummy
-        scoreboard players set #100 iruru.z_rnd 100
+        scoreboard players set #100 iruru.rng 100
+        
 # ボスバー
     # iruru:announcementを設定
         bossbar add iruru:announcement ""

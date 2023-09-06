@@ -1,6 +1,6 @@
-#> loot:rng
+#> loot:rng/div_4
 #
-# 乱数を生成します
+# 乱数を生成します(4で割る)
 #
 # @within function 
 #    loot:**

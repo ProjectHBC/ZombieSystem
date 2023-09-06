@@ -5,7 +5,7 @@
 # @within function adv:opened/recursive
 
 # 乱数生成
-    function loot:rng
+    function loot:rng/div_4
 
 # ルートチェスト
     # $day = ~0(=unstarted) - chest

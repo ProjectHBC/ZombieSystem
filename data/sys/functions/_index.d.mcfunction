@@ -18,6 +18,7 @@
 #   sys:install/buildup
 #   sys:repeat/
 #   sys:core/**
+#   loot:**
 #   cmd:game_*
     #declare score_holder $check
 
