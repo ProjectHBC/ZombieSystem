@@ -290,6 +290,17 @@
               "tag": "{Enchantments:[{id:\"minecraft:respiration\",lvl:10s},{id:\"minecraft:aqua_affinity\",lvl:10s}]}"
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:diamond_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Movement God\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Instead of increasing speed,\",\"color\":\"dark_gray\",\"italic\":false}','{\"text\":\"you decrease defense.\",\"color\":\"dark_gray\",\"italic\":false}','{\"text\":\"Mythic Armor\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}']},Unbreakable:1b,iruru:movement_god_boots,Enchantments:[{}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:-10000,Operation:0,UUID:[I;-1197518653,-1200862352,-1166338745,-100723625],Slot:\"feet\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:-10000,Operation:0,UUID:[I;1514547715,-410761569,-2045170812,-152699141],Slot:\"feet\"},{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.025,Operation:0,UUID:[I;1703022499,406341231,-1336103024,-1516473835],Slot:\"feet\"}]}"
+            }
+          ]
         }
       ]
     }

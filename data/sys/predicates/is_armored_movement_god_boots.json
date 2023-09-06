@@ -1,0 +1,13 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "feet": {
+          "item": "minecraft:diamond_boots",
+          "nbt": "{iruru:movement_god_boots}"
+        }
+      }
+    }
+  }
+  

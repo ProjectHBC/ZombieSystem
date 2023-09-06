@@ -162,7 +162,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Monster Energy\",\"color\":\"green\",\"bold\":true,\"italic\":true}'},HideFlags:32,CustomPotionEffects:[{Id:1,Amplifier:5b,Duration:400},{Id:4,Amplifier:5b,Duration:600},{Id:5,Amplifier:5b,Duration:400},{Id:8,Amplifier:3b,Duration:400},{Id:9,Amplifier:1b,Duration:40},{Id:10,Amplifier:3b,Duration:200},{Id:15,Amplifier:1b,Duration:40},{Id:16,Amplifier:1b,Duration:600},{Id:17,Amplifier:3b,Duration:20},{Id:18,Amplifier:3b,Duration:600},{Id:20,Amplifier:1b,Duration:40}],CustomPotionColor:2647068}"
+              "tag": "{display:{Name:'{\"text\":\"Monster Energy\",\"color\":\"green\",\"bold\":true,\"italic\":true}'},HideFlags:32,CustomPotionEffects:[{Id:1,Amplifier:4b,Duration:1200},{Id:4,Amplifier:4b,Duration:600},{Id:5,Amplifier:0b,Duration:600},{Id:9,Amplifier:0b,Duration:40},{Id:15,Amplifier:0b,Duration:40},{Id:16,Amplifier:0b,Duration:6000},{Id:17,Amplifier:2b,Duration:20},{Id:18,Amplifier:2b,Duration:40},{Id:20,Amplifier:0b,Duration:40},{Id:22,Amplifier:2b,Duration:6000},{Id:0,Amplifier:0b,Duration:6000}],CustomPotionColor:2647068}"
             }
           ]
         },

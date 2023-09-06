@@ -19,6 +19,8 @@
         scoreboard objectives add iruru.debug dummy "情報(debug)"
     # ゲーム作動チェック用
         scoreboard objectives add iruru.check dummy
+    # ゲーム状態記録用
+        #data modify storage iruru:condition condition set value "null"
     # インストール記録用 ## ストレージあったけど、使わないから無視
         #scoreboard objectives add iruru.install dummy
     # ゾンビのレベル記録用
@@ -47,10 +49,8 @@
 # shulker_box
     # 基礎チェストストレージを定義
         data modify storage iruru:based_tag_chest tag set value {display:{Name:'{"text":"chest"}'}}
-
     # 強制ロード
         forceload add 0 0
-
     # 設置
         setblock 0 1 0 shulker_box replace
         data merge block 0 1 0 {Items:[{Slot:0b,id:"minecraft:chest",Count:1b}]}
@@ -58,3 +58,14 @@
 # 乱数生成用
     # iruru.rngスコアを4に設定
         scoreboard players set #4 iruru.rng 4
+
+# ボスバー
+    # iruru:announcementを設定
+        bossbar add iruru:announcement ""
+    # 名前を変更
+        bossbar set iruru:announcement name "現在ゲームは停止中です"
+    # 色を変更 
+        bossbar set iruru:announcement color red
+    # 値を変更(初期の最大値)
+        bossbar set iruru:announcement value 100
+        

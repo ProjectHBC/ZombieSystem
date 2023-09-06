@@ -33,5 +33,9 @@
         effect give @a[predicate=sys:is_in_water] poison 2 1 true
         #execute as @a at @s if predicate sys:is_in_water run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:19,Amplifier:0b,Duration:2,ShowParticles:1b}]}
 
+# armoring_MGB
+    # "Movement God"を装備しているときに強走状態にする
+        effect give @a[predicate=sys:is_armored_movement_god_boots] parcool:inexhaustible 2 0 true
+
 # event
     # nothing :p

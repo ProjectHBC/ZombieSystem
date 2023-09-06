@@ -9,3 +9,7 @@
 
 # 必要な準備データを生成
     function sys:install/buildup
+
+# ゲームが進行中でサーバーが開かれたときやリロードされた時にポーズする
+    function cmd:game_pause
+    

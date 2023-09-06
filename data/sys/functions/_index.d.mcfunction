@@ -17,7 +17,7 @@
 # @within function
 #   sys:install/buildup
 #   sys:repeat/
-#   sys:core/tick
+#   sys:core/**
 #   cmd:game_*
     #declare score_holder $check
 
@@ -156,4 +156,9 @@
 # @within function
 #   sys:chest/modify
     #declare storage iruru:chest
-    
+
+#> ポーズアナウンス
+# @within function
+#   sys:install/**
+#   sys:core/**
+    #declare bossbar iruru:announcement
