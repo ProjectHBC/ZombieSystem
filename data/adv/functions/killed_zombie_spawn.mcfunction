@@ -4,7 +4,7 @@
 #
 # @within advancement/killed_zombie
 
-# 実績をリセット
+# 進捗をリセット
     advancement revoke @s only adv:killed_zombie
     
 # 乱数生成

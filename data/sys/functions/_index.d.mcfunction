@@ -73,6 +73,11 @@
 #   cmd:**
     #declare tag Iruru.survivor
 
+#> 死亡回数
+# @within function
+#   sys:repeat/**
+    #declare objective iruru.deathcount
+
 #> デバッグスコアボード
 #
 # 情報(現在時刻、日にち、レベル、生存者数)を掲載したスコアボード

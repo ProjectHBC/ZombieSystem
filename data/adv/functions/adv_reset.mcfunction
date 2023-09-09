@@ -28,6 +28,7 @@
     advancement revoke @s only adv:resistance/lv3
     advancement revoke @s only adv:resistance/lv4
     advancement revoke @s only adv:resistance/lv5
+    advancement revoke @s only adv:killed_zombie
 
 # メッセージ
     tellraw @s {"text": "データパックに関連する進捗をリセットしました","color": "gray"}

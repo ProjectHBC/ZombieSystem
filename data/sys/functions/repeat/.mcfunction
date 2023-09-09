@@ -5,7 +5,7 @@
 # @within function sys:core/tick
 
 # 死亡したプレイヤーに実行
-    function sys:repeat/for_death
+    execute if score $check iruru.check matches 1 run function sys:repeat/for_death/
 
 # daycount
     execute if score $check iruru.check matches 1 run function sys:repeat/daycount
