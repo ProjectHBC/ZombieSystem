@@ -2,7 +2,7 @@
 #
 # 日付を数える他
 #
-# @within function sys:repeat/daycount
+# @within function sys:repeat/
 
 # コマンド
     # daytime

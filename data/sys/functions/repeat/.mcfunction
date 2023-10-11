@@ -38,4 +38,10 @@
         effect give @a[predicate=sys:is_armored_movement_god_boots] parcool:inexhaustible 2 0 true
 
 # event
-    # nothing :p
+    # modのイベントを指定時間に実行する
+        execute if score $day iruru.daycount matches 49 if score $daytime iruru.daytime matches 13001 run function sys:repeat/enhancedcelestials/49
+        execute if score $day iruru.daycount matches 50 if score $daytime iruru.daytime matches 13001 run function sys:repeat/enhancedcelestials/50
+
+    # custom_spawner
+        execute if score $check iruru.check matches 1 run function sys:repeat/custom_spawner
+        

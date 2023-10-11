@@ -22,6 +22,10 @@
 #   cmd:game_*
     #declare score_holder $check
 
+#> 実行判定(stopした時用等)
+# @public
+    #declare score_holder $check_pause
+
 #> 日付記録用
 # @within function **
     #declare objective iruru.daycount
@@ -168,3 +172,21 @@
 #   sys:install/**
 #   sys:core/**
     #declare bossbar iruru:announcement
+
+#> カスタムスポナー
+# @within function
+#   sys:repeat/**
+#   sys:event/custom_spawner/**
+    #declare tag Iruru.custom_spawner
+
+#> カスタムスポナータイマー
+# @within function
+#   sys:install/**
+#   sys:event/custom_spawner/**
+    #declare objective iruru.cs_timer
+
+#> カスタムスポナータイマー記録用
+# @within function
+#   sys:install/**
+#   sys:event/custom_spawner/**
+    #declare score_holder $cs_timer

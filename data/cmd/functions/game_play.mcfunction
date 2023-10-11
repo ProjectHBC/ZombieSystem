@@ -7,6 +7,8 @@
 # cmd
     # ゲームルール:デイサイクルをオン
         execute if score $check iruru.check matches 1 run gamerule doDaylightCycle true
+    # カスタムスポナーの稼働を再開
+        execute if score $check iruru.check matches 1 run function sys:event/custom_spawner/mode/on
     # ポーズしたときのエフェクトを剝奪(元からあるとバグるけどまあいいか)
         #execute if score $check iruru.check matches 1 run effect clear @e[type=#zombie] slowness
         #execute if score $check iruru.check matches 1 run effect clear @e[type=#zombie] weakness

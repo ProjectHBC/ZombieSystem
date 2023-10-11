@@ -35,6 +35,8 @@
         scoreboard objectives add iruru.rng dummy
     # スロットナンバー記録用
         scoreboard objectives add iruru.chest_num dummy
+    # カスタムスポナー用のタイマー
+        scoreboard objectives add iruru.cs_timer dummy
 
 # チーム作成とモディファイ
     # create:デバッグ用

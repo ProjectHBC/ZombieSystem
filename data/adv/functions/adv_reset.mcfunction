@@ -26,8 +26,6 @@
     advancement revoke @s only adv:resistance/lv1
     advancement revoke @s only adv:resistance/lv2
     advancement revoke @s only adv:resistance/lv3
-    advancement revoke @s only adv:resistance/lv4
-    advancement revoke @s only adv:resistance/lv5
     advancement revoke @s only adv:killed_zombie
 
 # メッセージ

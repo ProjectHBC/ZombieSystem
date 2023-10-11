@@ -180,6 +180,28 @@
         {
           "type": "minecraft:item",
           "weight": 30,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"ZONe ENERGY\",\"color\":\"dark_gray\",\"bold\":true,\"italic\":true}'},CustomPotionEffects:[{Id:1b,Amplifier:4b,Duration:600,ShowParticles:1b},{Id:3b,Amplifier:4b,Duration:600,ShowParticles:1b},{Id:8b,Amplifier:0b,Duration:600,ShowParticles:1b},{Id:9b,Amplifier:0b,Duration:40,ShowParticles:1b},{Id:11b,Amplifier:2b,Duration:600,ShowParticles:1b},{Id:16b,Amplifier:0b,Duration:6000,ShowParticles:1b}],CustomPotionColor:15591213}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"青汁\",\"color\":\"dark_green\",\"bold\":true,\"italic\":true}'},CustomPotionEffects:[{Id:6b,Amplifier:2b,Duration:10},{Id:10b,Amplifier:2b,Duration:200,ShowParticles:1b},{Id:11b,Amplifier:2b,Duration:200,ShowParticles:1b},{Id:18b,Amplifier:2b,Duration:100,ShowParticles:1b},{Id:22b,Amplifier:4b,Duration:200,ShowParticles:1b},{Id:24b,Amplifier:0b,Duration:200,ShowParticles:1b}],CustomPotionColor:2452992}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
           "name": "minecraft:ender_chest"
         },
         {
@@ -227,7 +249,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"耐性のポーション\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"耐性（∞）\",\"color\":\"blue\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"効果:\",\"color\":\"dark_purple\",\"italic\":false}','{\"text\":\"lv1 耐性 +20%\",\"color\":\"blue\",\"italic\":false}','{\"text\":\"lv2 耐性 +40%\",\"color\":\"blue\",\"italic\":false}','{\"text\":\"lv3 耐性 +60%\",\"color\":\"blue\",\"italic\":false}','{\"text\":\"lv4 耐性 +80%\",\"color\":\"blue\",\"italic\":false}','{\"text\":\"lv5 耐性 +100%\",\"color\":\"blue\",\"italic\":false}']},HideFlags:32,iruru:resistance_potion,Enchantments:[{}],Potion:\"minecraft:empty\",CustomPotionColor:11190946}"
+              "tag": "{display:{Name:'{\"text\":\"耐性のポーション\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"耐性（∞）\",\"color\":\"blue\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"効果:\",\"color\":\"dark_purple\",\"italic\":false}','{\"text\":\"lv1 耐性 +20%\",\"color\":\"blue\",\"italic\":false}','{\"text\":\"lv2 耐性 +40%\",\"color\":\"blue\",\"italic\":false}','{\"text\":\"lv3 耐性 +60%\",\"color\":\"blue\",\"italic\":false}']},HideFlags:32,iruru:resistance_potion,Enchantments:[{}],Potion:\"minecraft:empty\",CustomPotionColor:11190946}"
             }
           ]
         }
@@ -290,6 +312,207 @@
           "type": "minecraft:item",
           "weight": 80,
           "name": "minecraft:fishing_rod"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "weight": 60,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:unbreaking\",lvl:1s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 40,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:unbreaking\",lvl:2s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 20,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:unbreaking\",lvl:3s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 10,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:unbreaking\",lvl:4s}]}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "weight": 60,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:smite\",lvl:1s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 40,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:smite\",lvl:2s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 20,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:smite\",lvl:3s}]}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "weight": 40,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:fire_aspect\",lvl:1s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 20,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:fire_aspect\",lvl:2s}]}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "weight": 60,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 40,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 20,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:protection\",lvl:3s}]}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "weight": 60,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:smite\",lvl:1s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 40,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:smite\",lvl:2s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 20,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:smite\",lvl:3s}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 10,
+              "name": "minecraft:enchanted_book",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:\"minecraft:smite\",lvl:4s}]}"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
