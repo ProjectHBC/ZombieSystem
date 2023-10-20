@@ -1,158 +1,161 @@
-[
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:river",
-        "fluid": {
-          "tag": "minecraft:water"
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:river",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:frozen_river",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:beach",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:cold_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:frozen_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:warm_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:lukewarm_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:deep_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:deep_cold_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:deep_frozen_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:deep_warm_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "biome": "minecraft:deep_lukewarm_ocean",
+          "fluid": {
+            "tag": "minecraft:water"
+          }
         }
       }
     }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:frozen_river",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:beach",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:cold_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:frozen_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:warm_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:lukewarm_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:deep_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:deep_cold_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:deep_frozen_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:deep_warm_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "location": {
-        "biome": "minecraft:deep_lukewarm_ocean",
-        "fluid": {
-          "tag": "minecraft:water"
-        }
-      }
-    }
-  }
-]
+  ]
+}
