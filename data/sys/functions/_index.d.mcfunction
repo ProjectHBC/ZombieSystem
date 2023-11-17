@@ -82,6 +82,11 @@
 #   sys:repeat/**
     #declare objective iruru.deathcount
 
+#> プレイヤー体力
+# @within function
+#   sys:**
+    #declare objective iruru.health
+
 #> デバッグスコアボード
 #
 # 情報(現在時刻、日にち、レベル、生存者数)を掲載したスコアボード
@@ -94,6 +99,10 @@
 #> デバッグ用のチーム
 # @within function sys:**
     #declare team Iruru.debugteam
+
+#> ゾンビサイドのチーム
+# @within function sys:**
+    #declare team Iruru.zombieteam
 
 #> ゾンビレベル
 # @within function

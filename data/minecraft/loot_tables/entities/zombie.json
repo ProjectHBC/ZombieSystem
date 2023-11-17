@@ -6,7 +6,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "weight": 30,
+          "name": "minecraft:air"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 40,
           "name": "minecraft:gold_ingot",
           "functions": [
             {
@@ -20,7 +25,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
+          "weight": 25,
           "name": "minecraft:apple",
           "functions": [
             {
@@ -34,7 +39,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 9,
+          "weight": 4,
           "name": "minecraft:golden_apple",
           "functions": [
             {

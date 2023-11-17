@@ -37,16 +37,24 @@
         scoreboard objectives add iruru.chest_num dummy
     # カスタムスポナー用のタイマー
         scoreboard objectives add iruru.cs_timer dummy
+    # 体力カウンター
+        scoreboard objectives add iruru.health health "体力"
 
-# チーム作成とモディファイ
-    # create:デバッグ用
+# チーム関連
+    # チームを作成
         team add Iruru.debugteam
-    # modify:デバッグ用
+        team add Iruru.zombieteam
+    # モディファイを設定
         team modify Iruru.debugteam color gray
+        team modify Iruru.zombieteam color dark_red
+        team modify Iruru.zombieteam nametagVisibility hideForOtherTeams
+        team modify Iruru.zombieteam deathMessageVisibility hideForOtherTeams
     # スコアボードを表示
         scoreboard objectives setdisplay sidebar.team.gray iruru.debug
+        scoreboard objectives setdisplay sidebar.team.dark_red iruru.health
     # プレフィックスを設定
-        team modify Iruru.debugteam prefix {"text": "[DEAD] ","color": "gray"} 
+        team modify Iruru.debugteam prefix {"text": "[DEAD] ","color": "gray"}
+        team modify Iruru.zombieteam prefix {"text": "[ZOMBIE] ","color": "dark_red"}
 
 # shulker_box
     # 基礎チェストストレージを定義
