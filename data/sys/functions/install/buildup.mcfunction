@@ -47,7 +47,7 @@
     # モディファイを設定
         team modify Iruru.debugteam color gray
         team modify Iruru.zombieteam color dark_red
-        team modify Iruru.zombieteam nametagVisibility hideForOtherTeams
+        team modify Iruru.zombieteam nametagVisibility never
         team modify Iruru.zombieteam deathMessageVisibility hideForOtherTeams
     # スコアボードを表示
         scoreboard objectives setdisplay sidebar.team.gray iruru.debug
