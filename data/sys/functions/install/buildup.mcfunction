@@ -44,11 +44,14 @@
     # チームを作成
         team add Iruru.debugteam
         team add Iruru.zombieteam
+        team add Iruru.survivor
     # モディファイを設定
         team modify Iruru.debugteam color gray
+        team modify Iruru.zombieteam friendlyFire false
         team modify Iruru.zombieteam color dark_red
         team modify Iruru.zombieteam nametagVisibility never
         team modify Iruru.zombieteam deathMessageVisibility hideForOtherTeams
+        team modify Iruru.survivor friendlyFire false
     # スコアボードを表示
         scoreboard objectives setdisplay sidebar.team.gray iruru.debug
         scoreboard objectives setdisplay sidebar.team.dark_red iruru.health

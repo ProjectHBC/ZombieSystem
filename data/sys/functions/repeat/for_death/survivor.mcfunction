@@ -1,6 +1,6 @@
-#> sys:repeat/for_death/second
+#> sys:repeat/for_death/survivor
 #
-# 死亡したプレイヤーに実行 - プレイヤーをスペクテイターモードにするなどの設定
+# 死亡したサバイバーのプレイヤーに実行 - プレイヤーをスペクテイターモードにするなどの設定
 #
 # @within function sys:repeat/for_death/
 
@@ -17,7 +17,5 @@
         tellraw @s [{"text": "✞復活することができません！✞","color": "red"}]
 
 # リセット
-    # 実行条件のタグを剝奪
-        #tag @s remove Iruru.death-second
-        scoreboard players set @s iruru.deathcount 0
+    scoreboard players set @s iruru.deathcount 0
         

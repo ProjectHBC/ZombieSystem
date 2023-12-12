@@ -12,6 +12,9 @@
     # ポーズしたときのエフェクトを剝奪(元からあるとバグるけどまあいいか)
         #execute if score $check iruru.check matches 1 run effect clear @e[type=#zombie] slowness
         #execute if score $check iruru.check matches 1 run effect clear @e[type=#zombie] weakness
+    # ゲームモードをサバイバルに変更
+        execute if score $check iruru.check matches 1 run gamemode survival @a[tag=Iruru.survivor]
+        execute if score $check iruru.check matches 1 run gamemode survival @a[team=Iruru.zombieteam]
 
 # メッセージ
     execute if score $check iruru.check matches 1 run tellraw @a {"text": "ゲームを再開しました\n時間やゾンビが動き出します","color": "gray"}

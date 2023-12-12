@@ -13,5 +13,8 @@
     attribute @s generic.follow_range base set 140
     effect give @s jump_boost 999999 1 true
 
+# zombieteamに参加
+    team join Iruru.zombieteam @s
+
 # タグを付与
     tag @s add Iruru.lv9

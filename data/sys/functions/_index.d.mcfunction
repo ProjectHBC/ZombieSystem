@@ -104,6 +104,13 @@
 # @within function sys:**
     #declare team Iruru.zombieteam
 
+#> サバイバーのチーム
+#
+# 基本的にサバイバータグを使用を推奨
+#
+# @within function sys:**
+    #declare team Iruru.survivor
+
 #> ゾンビレベル
 # @within function
 #   sys:**

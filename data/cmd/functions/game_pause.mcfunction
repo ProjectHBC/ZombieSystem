@@ -12,6 +12,9 @@
     # ゾンビ類の移動を低下(実質停止)及び攻撃力を低下させる
         #execute if score $check iruru.check matches 1 run effect give @e[type=#zombie] slowness 1000000 255 true
         #execute if score $check iruru.check matches 1 run effect give @e[type=#zombie] weakness 1000000 255 true
+    # ゲームモードをクリエイティブに変更
+        execute if score $check iruru.check matches 1 run gamemode creative @a[tag=Iruru.survivor]
+        execute if score $check iruru.check matches 1 run gamemode creative @a[team=Iruru.zombieteam]
 
 # メッセージ
     execute if score $check iruru.check matches 1 run tellraw @a {"text": "ゲームを一時停止しました\n再開するまで時間は動きません(その他モブやシステムは動く)","color": "gray"}
