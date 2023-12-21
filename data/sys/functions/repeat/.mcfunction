@@ -20,7 +20,7 @@
     execute if score $check iruru.check matches 1 run function sys:repeat/debug_mode
 
 # zombie_side
-    function sys:repeat/zombieteam
+    execute as @a[team=Iruru.zombieteam] run function sys:repeat/zombieteam/
 
 # killed_zombie
     function sys:repeat/killed_zombie

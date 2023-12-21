@@ -137,6 +137,8 @@
     #declare tag Iruru.lv8
     #declare tag Iruru.lv9
     #declare tag Iruru.lv10
+    #declare tag Iruru.lv11
+    #declare tag Iruru.lv12
 
 #> ゾンビキル数
 # @within function

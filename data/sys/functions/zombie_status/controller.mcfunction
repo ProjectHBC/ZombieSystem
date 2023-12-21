@@ -41,9 +41,17 @@
         execute if score $day iruru.daycount matches 36..40 as @e[type=#zombie,tag=!Iruru.lv9] run function sys:zombie_status/lv9
         execute if score $day iruru.daycount matches 36..40 run scoreboard players set $levels iruru.levels 9
     
-    # $day = 41~50 - lv10
-        execute if score $day iruru.daycount matches 41..50 as @e[type=#zombie,tag=!Iruru.lv10] run function sys:zombie_status/lv10
-        execute if score $day iruru.daycount matches 41..50 run scoreboard players set $levels iruru.levels 10
+    # $day = 41~45 - lv10
+        execute if score $day iruru.daycount matches 41..45 as @e[type=#zombie,tag=!Iruru.lv10] run function sys:zombie_status/lv10
+        execute if score $day iruru.daycount matches 41..45 run scoreboard players set $levels iruru.levels 10
+
+    # $day = 46~49 - lv11
+        execute if score $day iruru.daycount matches 46..49 as @e[type=#zombie,tag=!Iruru.lv11] run function sys:zombie_status/lv11
+        execute if score $day iruru.daycount matches 46..49 run scoreboard players set $levels iruru.levels 11
+
+    # $day = 50 - lv12
+        execute if score $day iruru.daycount matches 50 as @e[type=#zombie,tag=!Iruru.lv12] run function sys:zombie_status/lv12
+        execute if score $day iruru.daycount matches 50 run scoreboard players set $levels iruru.levels 12
 
     # $day = 51~ - lv0
         execute if score $day iruru.daycount matches 51.. as @e[type=#zombie,tag=!Iruru.lv0] run function sys:zombie_status/lv0

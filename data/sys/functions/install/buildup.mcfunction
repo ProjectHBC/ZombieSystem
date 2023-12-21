@@ -39,6 +39,8 @@
         scoreboard objectives add iruru.cs_timer dummy
     # 体力カウンター
         scoreboard objectives add iruru.health health "体力"
+    # 落下耐性
+        scoreboard objectives add iruru.fall dummy
 
 # チーム関連
     # チームを作成
