@@ -1,4 +1,4 @@
-#> cmd:game_init
+#> cmd:game/init
 #
 # ゲームの初期化を行います
 #

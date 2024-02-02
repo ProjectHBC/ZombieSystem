@@ -47,4 +47,8 @@
 
     # custom_spawner
         execute if score $check iruru.check matches 1 run function sys:repeat/custom_spawner
+
+# movement
+    # 41日以降に常時実行
+        execute if score $check iruru.check matches 1 if score $day iruru.daycount matches 41.. run function sys:repeat/zombie_movement/
         

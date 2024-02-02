@@ -41,6 +41,16 @@
         scoreboard objectives add iruru.health health "体力"
     # 落下耐性
         scoreboard objectives add iruru.fall dummy
+    # プレイヤーとゾンビの座標記録
+        scoreboard objectives add iruru.pos_x dummy
+        scoreboard objectives add iruru.pos_y dummy
+        scoreboard objectives add iruru.pos_z dummy
+    # プレイヤーとゾンビのY座標の差の計算用
+        scoreboard objectives add iruru.d_pos_y dummy
+    # ゾンビのベクトル記録
+        #scoreboard objectives add iruru.motion_x dummy
+        #scoreboard objectives add iruru.motion_y dummy
+        #scoreboard objectives add iruru.motion_z dummy
 
 # チーム関連
     # チームを作成
@@ -84,4 +94,9 @@
         bossbar set iruru:announcement color red
     # 値を変更(初期の最大値)
         bossbar set iruru:announcement value 100
-        
+
+# ストレージ設定
+    # カスタムスポナー
+        data modify storage iruru:cs_storage self set value true
+        #data modify storage iruru:cs_storage set_check set value []
+    

@@ -2,7 +2,7 @@
 #
 # デバッグモード
 #
-# @within function sys:repeat
+# @public
 
 # チームに追加
     team join Iruru.debugteam @s

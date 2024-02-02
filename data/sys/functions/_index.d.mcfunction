@@ -19,10 +19,10 @@
 #   sys:repeat/
 #   sys:core/**
 #   loot:**
-#   cmd:game_*
+#   cmd:game/**
     #declare score_holder $check
 
-#> 実行判定(stopした時用等)
+#> 実行判定(pauseした時用等)
 # @public
     #declare score_holder $check_pause
 
@@ -208,3 +208,26 @@
 #   sys:install/**
 #   sys:event/custom_spawner/**
     #declare score_holder $cs_timer
+    #declare score_holder $cs_count
+
+#> 静止しているゾンビ
+# @within function
+#   sys:system_tag/**
+#   sys:zombie_movement/**
+    #declare tag Iruru.standing
+
+#> XYZ座標記録
+# @within function
+#   sys:buildup
+#   sys:repeat/
+#   sys:system_tag/**
+#   sys:zombie_movement/**
+    #declare objective iruru.pos_x
+    #declare objective iruru.pos_y
+    #declare objective iruru.pos_z
+
+#> カスタムスポナー単体記録用
+# @within function
+#   sys:event/custom_spawner/**
+    #declare objective iruru:cs_storage
+    

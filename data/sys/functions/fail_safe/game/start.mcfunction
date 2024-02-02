@@ -1,4 +1,4 @@
-#> cmd:game_start
+#> sys:fail_safe/game/start
 #
 # ゲーム開始用のコマンド
 #

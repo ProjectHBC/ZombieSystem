@@ -2,7 +2,7 @@
 #
 # 復活用のコマンド
 #
-# @public
+# @user
 
 # チームを退出
     team leave @s

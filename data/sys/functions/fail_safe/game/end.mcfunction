@@ -1,4 +1,4 @@
-#> cmd:game_end
+#> sys:fail_safe/game/end
 #
 # ゲームを終了用のコマンド
 #
