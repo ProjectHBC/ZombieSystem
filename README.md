@@ -22,21 +22,21 @@ Minecraft Forge 1.16.5
 #### ゲームの開始方法
 
 - ロードメニューのスタートボタン
-- /function cmd:game_start
+- /function cmd:game/start
 
 #### ゲームの一時停止方法
 
 - ワールドを開き直す
-- /function cmd:game_pause
+- /function cmd:game/pause
 
 #### ゲームの再開方法
 
-- /function cmd:game_play
+- /function cmd:game/play
 
 #### ゲームの終了方法
 
 - プレイヤーの全滅
-- /function cmd:game_end
+- /function cmd:game/end
 
 ## 小ネタ/解説
 
