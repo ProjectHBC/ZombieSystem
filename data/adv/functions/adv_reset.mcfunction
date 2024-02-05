@@ -2,7 +2,7 @@
 #
 # バグった時とか用の進捗リセット
 #
-# @public
+# @user
 
 # 進捗リセット
     advancement revoke @s only adv:changed_inventory

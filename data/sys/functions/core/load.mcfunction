@@ -11,5 +11,5 @@
     function sys:install/buildup
 
 # ゲームが進行中でサーバーが開かれたときやリロードされた時にポーズする
-    function cmd:game_pause
+    function cmd:game/pause
     
