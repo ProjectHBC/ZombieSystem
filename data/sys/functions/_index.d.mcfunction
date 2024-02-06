@@ -216,6 +216,11 @@
 #   sys:zombie_movement/**
     #declare tag Iruru.standing
 
+#> 3段ジャンプ
+# @within function
+#   sys:repeat/zombie_movement/**
+    #declare tag Iruru.3blocks
+
 #> XYZ座標記録
 # @within function
 #   sys:buildup

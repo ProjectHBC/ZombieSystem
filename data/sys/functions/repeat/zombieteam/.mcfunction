@@ -6,10 +6,6 @@
 
 # コマンド
     # エフェクト
-    effect give @s minecraft:slowness 2 1 true
-    effect give @s parcool:inexhaustible 2 0 true
-    effect give @s minecraft:regeneration 2 2 true
-    effect give @s minecraft:health_boost 2 4 true
     effect give @s minecraft:saturation 2 0 true
 
     # 落下軽減

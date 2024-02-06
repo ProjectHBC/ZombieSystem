@@ -12,6 +12,6 @@
 
 # Y座標の差を利用した動き
     # プレイヤーのY座標>ゾンビのY座標でなくてはいけないので、d_pos_y<=-1であるかつ静止しているときに実行
-        execute if score @s iruru.d_pos_y matches ..-1 as @s[tag=Iruru.standing] run function sys:repeat/zombie_movement/movement/upward
-    # プレイヤーとゾンビのY座標が同じときに実行
-        execute if score @s iruru.d_pos_y matches 0 at @s if entity @a[team=Iruru.survivor,distance=..32,sort=nearest,gamemode=survival] run function sys:repeat/zombie_movement/movement/forward
+        execute if score @s iruru.d_pos_y matches ..-1 as @s[tag=Iruru.standing] run function sys:repeat/zombie_movement/movement/upward/
+    # プレイヤーとゾンビのY座標が同じときかつ2ブロック下が#can_place(air)でないときに実行
+        execute if score @s iruru.d_pos_y matches 0 at @s if entity @a[team=Iruru.survivor,distance=..32,sort=nearest,gamemode=survival] if block ~ ~-2 ~ #minecraft:can_place run function sys:repeat/zombie_movement/movement/forward/
