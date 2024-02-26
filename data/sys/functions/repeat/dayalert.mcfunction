@@ -16,4 +16,6 @@
         execute if score $day iruru.daycount matches 31 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $day iruru.daycount matches 36 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
         execute if score $day iruru.daycount matches 41 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
-        execute if score $day iruru.daycount matches 51 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $day iruru.daycount matches 46 run tellraw @a {"text": "ゾンビの様子が変化した…","color": "gray"}
+        execute if score $day iruru.daycount matches 50 run tellraw @a [{"text": "ゾンビの様子が変化した…\n","color": "gray"},{"text": "もう","color": "red"},{"text": "逃げ","color": "dark_red"},{"text": "られない…can't ES","color": "red"},{"text": "CAPE…PA","color": "dark_red"},{"text": "NIC…\n","color": "dark_red","bold": true},{"text": "誰も","color": "dark_red"},{"text": "助からない…","color": "red"},{"text": "君が覗き見てたの？\n","color": "dark_red","obfuscated": true},{"text": "CAN'T THINK STRAIGHT CAN'T CALM DOWN","color": "dark_red","bold": true}]
+        execute if score $day iruru.daycount matches 51 run tellraw @a [{"text": "ゾンビの様子が変化した…?\n","color": "gray"}]

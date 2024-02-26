@@ -212,16 +212,31 @@
 
 #> 静止しているゾンビ
 # @within function
-#   sys:system_tag/**
 #   sys:zombie_movement/**
     #declare tag Iruru.standing
 
 #> 3段ジャンプ
 # @within function
 #   sys:repeat/zombie_movement/**
-    #declare tag Iruru.3blocks
+    #declare objective iruru.3blocks
 
-#> XYZ座標記録
+#> ゾンビブロックタグ
+#
+# ゾンビが置いたブロックに付随するaecに使用
+#
+# @within function
+#   sys:repeat/zombie_movement/**
+    #declare tag Iruru.zombie_block
+
+#> ゾンビブロック時間管理
+#
+# ゾンビが置いたブロックの計画時間
+#
+# @within function
+#   sys:repeat/zombie_movement/**
+    #declare objective iruru.z_block
+
+#> XYZ座標記録  
 # @within function
 #   sys:buildup
 #   sys:repeat/
@@ -231,7 +246,7 @@
     #declare objective iruru.pos_y
     #declare objective iruru.pos_z
 
-#> カスタムスポナー単体記録用
+#> カスタムスポナー単体記録用  
 # @within function
 #   sys:event/custom_spawner/**
     #declare objective iruru:cs_storage

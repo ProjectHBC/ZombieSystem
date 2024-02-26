@@ -17,9 +17,6 @@
         team join Iruru.survivor @e[tag=Iruru.survivor]
     # survivorが0人になったときゲームを終了する
         execute if score $check iruru.check matches 1 if score $survivor iruru.survivor matches 0 unless score $player iruru.player matches 0 run function sys:fail_safe/game/end
-    # 動いていないゾンビにタグ付け
-        tag @e[tag=Iruru.standing] remove Iruru.standing
-        tag @e[tag=!Iruru.standing,type=#zombie,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add Iruru.standing
 
 # 座標
     # サバイバー

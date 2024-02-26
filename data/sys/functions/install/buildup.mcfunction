@@ -51,6 +51,10 @@
         #scoreboard objectives add iruru.motion_x dummy
         #scoreboard objectives add iruru.motion_y dummy
         #scoreboard objectives add iruru.motion_z dummy
+    # ゾンビの3段ジャンプ管理
+        scoreboard objectives add iruru.3blocks dummy
+    # ゾンビの設置したブロック管理
+        scoreboard objectives add iruru.z_block dummy
 
 # チーム関連
     # チームを作成
