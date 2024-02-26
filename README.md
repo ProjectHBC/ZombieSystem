@@ -2,7 +2,7 @@
 [![release](https://img.shields.io/github/release/ProjectHBC/zombie_system?logo=github)](https://github.com/ProjectHBC/zombie_system/releases)
 [![license](https://img.shields.io/github/license/ProjectHBC/zombie_system?logo=github)](https://github.com/ProjectHBC/zombie_system/blob/master/LICENSE)
 
-## zombie_system
+## ZombieSystem
 
 ゲームの進行を手助けするための専用のデータパック。
 
