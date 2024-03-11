@@ -16,6 +16,6 @@
         }
       },
     "rewards": {
-        "function": "adv:killed_zombie_spawn"
+        "function": "adv:killed_zombie/"
     }
 }

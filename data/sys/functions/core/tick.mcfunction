@@ -4,8 +4,8 @@
 #
 # @within tag/function minecraft:tick
 
-# 常時実行
-    function sys:repeat/
+# 無条件常時実行
+    function sys:repeat/always/
 
-# ゾンビのステータス変更
-    execute if score $check iruru.check matches 1 run function sys:zombie_status/controller
+# ゲーム中($check = 1)の時のみ常時実行
+    function sys:repeat/in-game/

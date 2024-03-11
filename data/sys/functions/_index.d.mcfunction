@@ -10,7 +10,7 @@
 #
 # ゲームが起動中かの判定に用いられる(今思うとstorageでも良かった)
 #
-# @within function **
+# @public
     #declare objective iruru.check
 
 #> 実行判定

@@ -21,16 +21,14 @@
         scoreboard objectives add iruru.check dummy
     # ゲーム状態記録用
         #data modify storage iruru:condition condition set value "null"
-    # インストール記録用 ## ストレージあったけど、使わないから無視
-        #scoreboard objectives add iruru.install dummy
     # ゾンビのレベル記録用
         scoreboard objectives add iruru.levels dummy
     # ゾンビのキル数記録用
         scoreboard objectives add iruru.killed_zs dummy "ゾンビの合計キル数"
-        scoreboard objectives add iruru.killed_z minecraft.killed:zombie
-        scoreboard objectives add iruru.killed_zv minecraft.killed:zombie_villager
-        scoreboard objectives add iruru.killed_d minecraft.killed:drowned
-        scoreboard objectives add iruru.killed_h minecraft.killed:husk
+        # scoreboard objectives add iruru.killed_z minecraft.killed:zombie
+        # scoreboard objectives add iruru.killed_zv minecraft.killed:zombie_villager
+        # scoreboard objectives add iruru.killed_d minecraft.killed:drowned
+        # scoreboard objectives add iruru.killed_h minecraft.killed:husk
     # 乱数生成用
         scoreboard objectives add iruru.rng dummy
     # スロットナンバー記録用
@@ -47,10 +45,6 @@
         scoreboard objectives add iruru.pos_z dummy
     # プレイヤーとゾンビのY座標の差の計算用
         scoreboard objectives add iruru.d_pos_y dummy
-    # ゾンビのベクトル記録
-        #scoreboard objectives add iruru.motion_x dummy
-        #scoreboard objectives add iruru.motion_y dummy
-        #scoreboard objectives add iruru.motion_z dummy
     # ゾンビの3段ジャンプ管理
         scoreboard objectives add iruru.3blocks dummy
     # ゾンビの設置したブロック管理
@@ -103,4 +97,3 @@
     # カスタムスポナー
         data modify storage iruru:cs_storage self set value true
         #data modify storage iruru:cs_storage set_check set value []
-    

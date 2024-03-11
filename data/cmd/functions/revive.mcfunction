@@ -4,12 +4,10 @@
 #
 # @user
 
-# チームを退出
-    team leave @s
-
+# サバイバーチームに参加
+    team join Iruru.survivor @s
 # ゲームモードをサバイバルに変更
     gamemode survival @s
-
 # サバイバータグを付与
     tag @s add Iruru.survivor
 

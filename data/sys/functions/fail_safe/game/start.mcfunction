@@ -21,7 +21,9 @@
     # $checkを1に設定(起動状態)
         scoreboard players set $check iruru.check 1
     # サバイバーのタグを設定
-        tag @a[gamemode=survival,team=!Iruru.debugteam] add Iruru.survivor
+        tag @a[team=!Iruru.debugteam] add Iruru.survivor
+    # サバイバーのチームを設定
+        team join Iruru.survivor @a[team=!Iruru.debugteam]
     # ゾンビキル数カウントを設定
         scoreboard objectives setdisplay list iruru.killed_zs
     # improvedmobsのdificultyを0に設定
