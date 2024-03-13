@@ -11,7 +11,7 @@
     effect give @s minecraft:regeneration 1000000 2 true
     effect give @s minecraft:health_boost 1000000 4 true
     effect give @s resistance 1000000 1 true
-    execute as @s if score $day iruru.daycount matches 41..44 run effect give @s strength 1000000 6
-    execute as @s if score $day iruru.daycount matches 45..49 run effect give @s strength 1000000 7
-    execute as @s if score $day iruru.daycount matches 50 run effect give @s strength 1000000 9
+    execute as @s if score $day iruru.daycount matches 41..44 run effect give @s strength 1000000 7
+    execute as @s if score $day iruru.daycount matches 45..49 run effect give @s strength 1000000 11
+    execute as @s if score $day iruru.daycount matches 50 run effect give @s strength 1000000 14
     

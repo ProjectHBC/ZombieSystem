@@ -9,7 +9,7 @@
 
 # pos
     # サバイバー
-        execute as @e[tag=Iruru.survivor] run function sys:repeat/always/pos
+        execute as @a[tag=Iruru.survivor] run function sys:repeat/always/pos
     # ゾンビ
         execute as @e[type=#zombie] run function sys:repeat/always/pos
 
@@ -17,7 +17,10 @@
     execute as @a[team=Iruru.zombieteam] run function sys:repeat/always/zombieteam/
 
 # 水の中で泳いでいる状態であるときに毒状態にする
-        effect give @a[predicate=sys:is_in_water,tag=Iruru.survivor] poison 2 1 true
+    effect give @a[predicate=sys:is_in_water,tag=Iruru.survivor] poison 2 1 true
 
 # "Movement God"を装備しているときに強走状態にする
-        effect give @a[predicate=sys:is_armored_movement_god_boots] parcool:inexhaustible 2 0 true
+    effect give @a[predicate=sys:is_armored_movement_god_boots] parcool:inexhaustible 2 0 true
+
+# repair_tool
+    execute as @a[tag=Iruru.survivor,predicate=sys:is_using_repair_tool] run function sys:repeat/always/repair_tool

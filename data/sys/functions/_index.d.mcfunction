@@ -250,4 +250,8 @@
 # @within function
 #   sys:event/custom_spawner/**
     #declare objective iruru:cs_storage
+
+#> 計算用一時保存
+# @public
+    #declare objective iruru.temp
     

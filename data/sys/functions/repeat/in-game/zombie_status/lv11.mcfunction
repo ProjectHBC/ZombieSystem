@@ -6,10 +6,10 @@
 #
 # @within function sys:repeat/in-game/zombie_status/controller
 
-# ステータス変更 (HP-1.5x - ATK-4.0x - SPD-1.5x - Range-5.0x - Jump-lv2) - lv11
+# ステータス変更 (HP-1.5x - ATK-20.0x - SPD-1.4x - Range-5.0x - Jump-lv2) - lv11
     attribute @s generic.max_health base set 30.0
-    attribute @s generic.attack_damage base set 12.0
-    attribute @s generic.movement_speed base set 0.34500000625
+    attribute @s generic.attack_damage base set 60.0
+    attribute @s generic.movement_speed base set 0.32200000583
     attribute @s generic.follow_range base set 175
     effect give @s jump_boost 999999 1 true
 

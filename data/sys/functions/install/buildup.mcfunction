@@ -49,6 +49,8 @@
         scoreboard objectives add iruru.3blocks dummy
     # ゾンビの設置したブロック管理
         scoreboard objectives add iruru.z_block dummy
+    # 計算用一時保存
+        scoreboard objectives add iruru.temp dummy
 
 # チーム関連
     # チームを作成

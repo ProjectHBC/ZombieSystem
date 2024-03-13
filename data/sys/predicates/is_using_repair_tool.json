@@ -1,0 +1,18 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "flags": {
+        "is_sneaking": true
+      },
+      "equipment": {
+        "offhand": {
+          "nbt": "{iruru:repair_tool}"
+        },
+        "mainhand": {
+          "tag": "minecraft:repair_armor"
+        }
+      }
+    }
+  }
+  
