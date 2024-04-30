@@ -1,6 +1,7 @@
 # ZombieSystem
-[![release](https://img.shields.io/github/release/ProjectHBC/zombie_system?logo=github)](https://github.com/ProjectHBC/zombie_system/releases)
-[![license](https://img.shields.io/github/license/ProjectHBC/zombie_system?logo=github)](https://github.com/ProjectHBC/zombie_system/blob/master/LICENSE)
+[![release](https://img.shields.io/github/release/ProjectHBC/ZombieSystem?logo=github)](https://github.com/ProjectHBC/ZombieSystem/releases)
+[![license](https://img.shields.io/github/license/ProjectHBC/ZombieSystem?logo=github)](https://github.com/ProjectHBC/ZombieSystem/blob/master/LICENSE)
+[![downloads](https://img.shields.io/github/downloads/ProjectHBC/ZombieSystem/total?logo=github)](https://github.com/ProjectHBC/ZombieSystem/releases/latest)
 
 ## ZombieSystem
 
